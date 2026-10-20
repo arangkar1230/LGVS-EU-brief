@@ -37,7 +37,7 @@ h2{font-size:14px;color:var(--muted);font-weight:700;letter-spacing:.04em;margin
 .filters button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
 .item .meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
-.chip{font-size:12px;padding:2px 9px;border-radius:999px;background:var(--chip);color:var(--muted)}
+.chip{white-space:nowrap;font-size:12px;padding:2px 9px;border-radius:999px;background:var(--chip);color:var(--muted)}
 .rel-높음{color:#fff;background:var(--hi)}.rel-중간{color:#fff;background:var(--mid)}.rel-낮음{color:#fff;background:var(--lo)}
 .item h3{font-size:17px;margin:2px 0 6px;line-height:1.4}
 .item p{margin:0 0 10px}
@@ -64,11 +64,7 @@ const archive = JSON.parse(document.getElementById('archive-data').textContent);
 const base = '__BASE__';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const statusLabel = {ok:'수집 완료', partial:'부분 수집', blocked:'접근 차단', error:'오류'};
-let filter = '전체';
-
 function render(){
-  const cats = ['전체', ...new Set(d.items.map(i => i.category))];
-  const items = d.items.filter(i => filter === '전체' || i.category === filter);
   document.getElementById('app').innerHTML = `
   <header>
     <div class="eyebrow">LG전자 VS · 유럽 해외영업 데일리 브리프</div>
@@ -80,16 +76,16 @@ function render(){
       ${archive.map(a => `<option value="${base}archive/${a}.html" ${a===d.date?'selected':''}>${a}</option>`).join('')}
     </select>
   </div>
-  <section class="top3"><h2>핵심 3줄</h2><div class="box"><ol>${d.top3.map(t=>`<li>${esc(t)}</li>`).join('')}</ol></div></section>
+  <section class="top3"><h2>오늘의 5가지</h2><div class="box"><ol>${d.items.map(i=>`<li><a href="#${esc(i.id)}" style="color:inherit">${esc(i.title)}</a> <span class="chip">${i.section==='top'?'대형 이슈':'VS 연관'}</span></li>`).join('')}</ol></div></section>
   <section class="actions"><h2>오늘 바이어에게 확인할 것</h2><div class="box"><ul>${d.today_actions.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div></section>
-  <section><h2>뉴스별 영향 가설</h2>
-    <div class="filters">${cats.map(c=>`<button class="${c===filter?'on':''}" onclick="filter='${c}';render()">${esc(c)}</button>`).join('')}</div>
-    ${items.map(it => `
-    <article class="item">
-      <div class="meta"><span class="chip rel-${esc(it.relevance)}">관련도 ${esc(it.relevance)}</span><span class="chip">${esc(it.category)}</span><span class="chip">${esc(it.hypothesis.direction)}</span></div>
+  ${[['top','① 오늘의 가장 큰 이슈'],['vs','② VS본부 연관 이슈']].map(([sec,label]) => `
+  <section><h2>${label}</h2>
+    ${d.items.filter(i => i.section === sec).map(it => `
+    <article class="item" id="${esc(it.id)}">
+      <div class="meta"><span class="chip ${sec==='top'?'rel-중간':'rel-높음'}">${sec==='top'?'대형 이슈':'VS 연관'}</span><span class="chip">${esc(it.category)}</span><span class="chip">${esc(it.hypothesis.direction)}</span></div>
       <h3>${esc(it.title)}</h3>
       <p>${esc(it.summary)}</p>
-      <div class="lab">VS 제품 영향 가설 · ${it.hypothesis.products.map(esc).join(', ')}</div>
+      <div class="lab">VS 제품 수요·유통 영향 가설 ·${it.hypothesis.products.map(esc).join(', ')}</div>
       <div class="hyp">${esc(it.hypothesis.text)}</div>
       <div class="lab">아직 확정 아님</div>
       <div class="caveat">${esc(it.caveat)}</div>
@@ -100,7 +96,7 @@ function render(){
       <div class="lab">출처</div>
       <div class="src">${it.sources.map(s=>`<div><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></div>`).join('')}</div>
     </article>`).join('')}
-  </section>
+  </section>`).join('')}
   <section><h2>수집 상태</h2><div class="status">${d.sources_status.map(s=>`
     <div class="st"><b><a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(s.name)}</a></b><span class="${esc(s.status)}">${statusLabel[s.status]||esc(s.status)}</span><div style="color:var(--muted)">${esc(s.note)}</div></div>`).join('')}</div></section>
   <footer>뉴스 기반 가설이며 수요 변화를 확정하지 않습니다. 실제 판단은 바이어 확인과 판매·재고 데이터로 검증하세요. · 생성 ${esc(d.generated_at)}</footer>`;
