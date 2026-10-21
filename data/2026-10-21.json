@@ -1,129 +1,129 @@
 {
   "date": "2026-10-21",
-  "generated_at": "2026-10-21T02:40:00+09:00",
-  "headline": "프랑스 전국 소요와 유가 $110 돌파가 유럽 뉴스의 중심. 자동차 쪽에서는 2035 규제 완화·'Made in Europe' 논의, 중국 브랜드의 유럽 공세, 스페인 동부 폭풍이 VS 영업과 맞닿아 있음.",
+  "generated_at": "2026-10-21T21:50:00+09:00",
+  "headline": "유럽 여러 도시로 번진 생활비 시위와 트럼프의 대러·대우크라이나 행보가 오늘 유럽 뉴스의 중심. VS 쪽에서는 EU 에너지 수요 감축 논의, 프랑스·스페인 동부 홍수의 물류 차질, 프랑스 국채금리 5% 돌파·영국 금리 인상 전망이 영업과 맞닿아 있음.",
   "sources_status": [
-    {"name": "Euronews", "url": "https://www.euronews.com/", "status": "ok", "note": "홈페이지 직접 수집 (10/20 기사 중심)"},
-    {"name": "eurotopics", "url": "https://www.eurotopics.net/en/", "status": "ok", "note": "홈페이지 직접 수집 (최신 토론 10/19)"}
+    {"name": "Euronews", "url": "https://www.euronews.com/", "status": "ok", "note": "홈페이지 및 개별 기사 직접 수집 (10/20~10/21 기사 중심)"},
+    {"name": "eurotopics", "url": "https://www.eurotopics.net/en/", "status": "ok", "note": "홈페이지 및 개별 토론 직접 수집 (최신 토론 10/20)"}
   ],
   "items": [
     {
-      "id": "france-unrest",
+      "id": "europe-protests",
       "section": "top",
       "category": "사회/운영 리스크",
-      "title": "프랑스 전국 소요 확산 — 정부, 필요 지역 추가 통행금지 예고",
-      "summary": "생활비·사회 문제로 시작된 주말 시위가 방화·약탈로 번지면서 상점 피해 규모가 두 배로 늘었고, 르코르뉘 총리는 상황에 따라 통행금지를 확대하겠다고 밝힘. 유럽 언론은 원인과 마크롱 정부의 정치적 부담을 두고 논쟁 중.",
+      "title": "생활비 시위, 프랑스·이탈리아 등 유럽 도시로 확산 — 이탈리아 밀라노에 군 500명 투입",
+      "summary": "청년층 중심의 시위가 프랑스·이탈리아·알바니아·포르투갈·스페인으로 번지며 일부는 방화·약탈로 이어짐. 프랑스는 주말 추가 시위에 대비해 군(상티넬 작전)을 정적 경비에 돌리는 대규모 치안 작전을 예고했고, 이탈리아는 밀라노·토리노·볼로냐 폭력 사태 후 새 치안법령과 함께 밀라노에 병력 500명 증파를 의결함.",
       "sources": [
-        {"title": "Euronews — France to impose new curfews where situation requires it", "url": "https://www.euronews.com/2026/10/20/france-to-impose-new-curfews-where-situation-requires-it-pm-lecornu-says"},
-        {"title": "Euronews — France riot damage doubles", "url": "https://www.euronews.com/2026/10/20/frances-riot-damage-doubles-who-will-pay-for-thousands-of-wrecked-shops"},
-        {"title": "eurotopics — France: what is fuelling the unrest?", "url": "https://www.eurotopics.net/en/365800/france-what-is-fuelling-the-unrest"}
+        {"title": "eurotopics — Protests and violence: what's going on in Europe's cities?", "url": "https://www.eurotopics.net/en/365879/protests-and-violence-what-s-going-on-in-europes-cities"},
+        {"title": "Euronews — Italy deploys 500 troops to Milan under new security decree", "url": "https://www.euronews.com/2026/10/21/italy-deploys-500-troops-to-milan-under-new-security-decree-following-violent-clashes"},
+        {"title": "Euronews — France vows massive security operation involving military for weekend protests", "url": "https://www.euronews.com/2026/10/20/france-vows-massive-security-operation-involving-military-forces-for-expected-weekend-prot"}
       ],
       "hypothesis": {
-        "products": ["프랑스 OEM 향 납품 전반"],
+        "products": ["프랑스·이탈리아 OEM 향 납품 전반"],
         "direction": "운영 리스크",
-        "text": "도로 봉쇄·통행금지가 공장 주변이나 물류 경로로 번지면 프랑스 완성차 공장 입고가 늦어질 수 있음. 소비 심리가 위축되면 프랑스 내수 신차 판매가 둔화되어 이후 call-off가 줄어들 가능성도 있음."
+        "text": "주말 시위가 도로·물류 거점 주변으로 번지거나 통행 제한이 넓어지면 프랑스·북부 이탈리아 공장 입고와 트럭 운송이 늦어질 수 있음. 생활비 불만이 길어지면 해당 국가 신차 구매가 미뤄져 이후 call-off가 줄어들 가능성도 있음."
       },
-      "caveat": "현재 보도는 도심 상점 피해 중심이며, 자동차 공장 가동 차질이나 물류 봉쇄는 확인되지 않았음.",
+      "caveat": "보도된 피해는 도심 상점·공공건물 중심이며, 도로·항만·공장·연료 저장소 봉쇄는 확인되지 않았음. 소비 위축이 실제 신차 주문 감소로 이어졌는지도 데이터 없음.",
       "actions": [
-        "프랑스 내 납품처(공장·창고)의 입고 일정과 물류 경로에 변동이 있는지 확인",
-        "포워더에게 프랑스 구간 운송 지연·우회 여부 점검 요청"
+        "프랑스·북부 이탈리아(밀라노·토리노·볼로냐 인근) 납품처의 이번 주말 전후 입고 일정 변동 여부 확인",
+        "포워더에게 주말 시위 예정 지역 우회 경로와 지연 가능성 점검 요청"
       ],
-      "buyer_question": "Are the current disruptions in France affecting inbound logistics or line schedules at your French plants?"
+      "buyer_question": "Do you expect the weekend protests in France or Northern Italy to affect inbound deliveries or shift schedules at your plants, and should we adjust our shipment timing?"
     },
     {
-      "id": "oil-inflation",
+      "id": "trump-ukraine-russia",
       "section": "top",
-      "category": "거시경제/에너지",
-      "title": "유가 배럴당 $110 돌파, 독일 모기지 금리 2009년 이후 최고",
-      "summary": "중동 공급 리스크로 유가가 110달러를 넘었고, 인플레이션 우려에 독일 주택담보대출 금리가 2009년 이후 최고치로 상승. 생활비 부담에 유럽 각국에서 거리 시위가 이어지고 있음.",
+      "category": "지정학/에너지",
+      "title": "트럼프, 우크라이나 압박 강화 — 대러 제재 면제·러시아 디젤 수출 합의 보도",
+      "summary": "트럼프 대통령이 젤렌스키를 공개 비판하며 '합의하라'고 압박하고, 러시아 정유시설 공격 중단을 요구함. 대러 제재 패키지를 면제하고 러시아 디젤 수출과 관련한 합의를 했다는 보도도 나옴. 미 특사 방러 중 러시아가 미국인을 석방했고, 유럽에서는 독자 안보 '플랜 B' 필요성이 거론됨.",
       "sources": [
-        {"title": "Euronews — Oil prices top $110", "url": "https://www.euronews.com/2026/10/20/oil-prices-top-110-as-traders-weigh-middle-east-risks"},
-        {"title": "Euronews — German mortgage rates highest since 2009", "url": "https://www.euronews.com/2026/10/20/german-mortgage-rates-climb-to-highest-since-2009-as-iran-war-stokes-inflation-fears"},
-        {"title": "Euronews — Inflation squeeze pushes Europeans onto the streets", "url": "https://www.euronews.com/2026/10/20/inflation-squeeze-pushes-europeans-onto-the-streets-can-the-eu-help"}
+        {"title": "eurotopics — Trump ups the pressure on Zelensky", "url": "https://www.eurotopics.net/en/365802/trump-ups-the-pressure-on-zelensky"},
+        {"title": "Euronews — Trump is taking Russia's side against Ukraine, former US general says", "url": "https://www.euronews.com/2026/10/21/trump-is-taking-russias-side-against-ukraine-former-us-general-tells-euronews"},
+        {"title": "Euronews — Russia frees American Stephen Hubbard during US envoy's visit", "url": "https://www.euronews.com/2026/10/21/russia-frees-detained-american-stephen-hubbard-during-us-envoys-visit"}
       ],
       "hypothesis": {
         "products": ["전 제품군 (신차 생산량 연동)", "e-파워트레인 (LG마그나)"],
         "direction": "혼재",
-        "text": "금리·물가 부담으로 신차 구매가 미뤄지면 OEM 생산 계획이 하향되어 부품 call-off가 줄 수 있음. 반대로 고유가가 연비·전동화 차량 관심을 높여 EV·하이브리드 구성 비중이 올라갈 여지도 있어 방향은 단정하기 어려움."
+        "text": "러시아산 디젤 유통이 늘어 유럽 연료 가격이 진정되면 소비 심리와 물류비 부담이 완화될 여지가 있음. 반대로 미·유럽 간 안보 불확실성이 커지면 유럽 OEM이 투자·신규 플랫폼 결정을 미루거나 방산 쪽으로 예산이 쏠려 RFQ 일정이 늦어질 가능성도 있음."
       },
-      "caveat": "유가·금리 보도일 뿐, 실제 딜러 주문이나 OEM 생산 계획 변경 데이터는 아님.",
+      "caveat": "디젤 합의의 내용·규모와 유럽 시장에 실제 들어올 물량은 확인되지 않았음. 보도된 분석 일부는 전직 미국 관리의 견해임.",
       "actions": [
-        "주요 바이어의 최근 4~8주 call-off 추이와 다음 분기 생산 계획 변동 여부 확인",
-        "파워트레인별(EV/HEV/ICE) 주문 믹스에 변화가 보이는지 문의",
-        "물류비·원자재 상승분에 대한 가격 협의 요청이 나올지 사전 파악"
+        "진행 중인 RFQ·소싱 결정 일정에 지정학 불확실성으로 인한 연기 움직임이 있는지 확인",
+        "물류비(디젤 할증) 추이와 연료비 연동 운임 조정 계획을 포워더와 점검"
       ],
-      "buyer_question": "Have you seen any change in dealer order intake or powertrain mix over the past few weeks that could affect your Q1 production schedule?"
+      "buyer_question": "Is the current geopolitical uncertainty causing any delay to sourcing decisions or nomination timelines on your upcoming programs?"
     },
     {
-      "id": "made-in-europe-2035",
+      "id": "eu-energy-demand-cuts",
       "section": "vs",
-      "category": "규제/산업정책",
-      "title": "2035 내연기관 규제 완화와 '부품 70% 유럽산' 요건 연계 논의",
-      "summary": "프랑스·독일이 2035년 CO₂ 규제를 완화하는 대신 배터리를 제외한 차량 부품의 70%를 유럽에서 생산하도록 하는 공동안을 내놓았고, 10/20에는 유럽의회 주요 정파가 2035 감축 목표 완화에 합의했다는 보도가 이어짐.",
+      "category": "에너지/원자재",
+      "title": "EU, 중동 위기 장기화에 에너지 수요 감축 검토 — 가스 저장률 74%로 2011년 이후 최저",
+      "summary": "EU 에너지장관들이 10/29 회의에서 회원국 공통 수요 감축 방안을 논의할 예정. 자발적 절약 호소부터 특정 부문 제한까지 선택지가 거론되며, 산업을 제한 대상에 넣을지가 쟁점. 이란 전쟁 이후 가스 가격은 140% 올랐고 브렌트유는 배럴당 110달러 수준, 강한 한파 시 가스 12~15% 부족 경고도 나옴.",
       "sources": [
-        {"title": "Euronews — France and Germany strike car-industry deal", "url": "https://www.euronews.com/2026/10/16/france-and-germany-strike-car-industry-deal-linking-2035-engine-rules-to-made-in-europe-pu"},
-        {"title": "Bloomberg — EU carmakers set to win 2035 emissions reprieve (사실 확인용)", "url": "https://www.bloomberg.com/news/articles/2026-10-20/eu-carmakers-set-to-win-2035-emissions-reprieve-in-lawmaker-deal"}
+        {"title": "Euronews — Europe weighs energy-saving measures as Middle East crisis deepens", "url": "https://www.euronews.com/2026/10/21/europe-weighs-energy-saving-measures-as-middle-east-crisis-deepens"}
       ],
       "hypothesis": {
-        "products": ["인포테인먼트/텔레매틱스", "ADAS 카메라", "차량용 램프 (ZKW)", "e-파워트레인 (LG마그나)"],
+        "products": ["e-파워트레인 (LG마그나)", "차량용 램프 (ZKW)", "전 제품군 (유럽 내 생산·조립)"],
         "direction": "혼재",
-        "text": "현지 생산 비중 요건이 생기면 아시아 생산 부품은 소싱 평가에서 불리해지고, 유럽 내 생산 거점 물량은 상대적으로 유리해질 가능성. 내연·하이브리드 플랫폼 수명이 늘면 일부 EV 전용 플랫폼의 SOP가 늦춰질 수 있으나, 인포테인먼트는 파워트레인과 무관하게 탑재돼 영향이 작을 수 있음."
+        "text": "산업용 에너지 사용 제한이나 가스 부족이 현실화되면 유럽 OEM·Tier-1 공장 가동이 줄어 call-off가 흔들리고, 유럽 내 ZKW 등 자체 생산 비용도 오를 수 있음. 한편 연료 가격 부담이 길어지면 EV·하이브리드 관심이 높아져 e-파워트레인 물량에 우호적일 여지도 있음."
       },
-      "caveat": "양국 공동안과 의회 정파 합의 단계로, 이사회·집행위 협상이 남아 있음. '유럽' 범위와 원산지 산정 기준도 미정.",
+      "caveat": "이사회 문서는 구체적 감축 수치나 산업 제한을 제안하지 않았고 합의된 것도 없음. 겨울 한파 여부도 미정.",
       "actions": [
-        "진행 중인 RFQ에 현지 조달 비율(local content) 조건이 추가됐거나 검토 중인지 확인",
-        "EV 플랫폼 SOP 일정과 연간 물량 forecast 변경 여부 확인"
+        "주요 바이어에게 겨울철 에너지 제한 시 공장 가동 축소·교대 조정 비상 계획이 있는지 확인",
+        "향후 2~3개월 forecast에 에너지 리스크가 반영됐는지, EV/ICE 믹스 변동 여부 문의",
+        "에너지 할증 등 가격 조정 요청 가능성 사전 파악"
       ],
-      "buyer_question": "Is your purchasing team already factoring a possible 'Made in Europe' local-content requirement or a revised 2035 timeline into current sourcing and SOP plans?"
+      "buyer_question": "Do you have contingency plans for reduced plant operations if EU energy-saving measures or gas shortages hit industry this winter, and how would that affect your call-offs?"
     },
     {
-      "id": "china-brands-paris",
+      "id": "floods-france-spain",
       "section": "vs",
-      "category": "경쟁/시장",
-      "title": "파리 모터쇼, 중국 신생 브랜드에 관심 집중",
-      "summary": "파리 몽디알 드 로토에서 처음 유럽에 선보인 중국 브랜드들이 관람객의 주목을 받았고, 가격 경쟁력과 기술 사양이 유럽 브랜드와 비교되는 분위기.",
+      "category": "기상/재해·물류",
+      "title": "프랑스 남동부·스페인 발렌시아 홍수 — A9 고속도로 일시 폐쇄, 철도 차질",
+      "summary": "폭풍 '아담'과 관련된 집중호우로 스페인 발렌시아·카탈루냐에서 5명이 숨졌고, 일부 지역엔 24시간 700mm 안팎의 비가 쏟아짐. 프랑스 남동부에서도 사망·실종자가 나왔으며, 님 인근 A9 고속도로가 몇 시간 폐쇄되고 마르세유 주변 고속도로 일부 침수, 님 발착 열차가 차질을 빚음.",
       "sources": [
-        {"title": "Euronews — New Chinese brands drive curiosity at the Mondial de l'Auto", "url": "https://www.euronews.com/2026/10/19/new-chinese-brands-drive-curiosity-at-the-mondial-de-lauto-car-show-in-paris"}
+        {"title": "Euronews — Severe weather in southern France: one dead near Marseille", "url": "https://www.euronews.com/2026/10/21/severe-weather-in-southern-france-one-dead-near-marseille-one-missing-in-corsica"},
+        {"title": "Euronews — What is Spain's DANA weather phenomenon?", "url": "https://www.euronews.com/2026/10/21/what-is-spains-dana-weather-phenomenon-and-is-climate-change-making-it-worse"}
       ],
       "hypothesis": {
-        "products": ["인포테인먼트", "ADAS 카메라", "차량용 램프 (ZKW)"],
-        "direction": "혼재",
-        "text": "중국 브랜드가 유럽 점유율을 늘리면 기존 유럽 OEM 고객의 물량이 압박받을 수 있음. 동시에 유럽 OEM이 사양 경쟁(대화면 인포테인먼트, ADAS 기본 탑재)으로 대응하면 고사양 부품 RFQ가 늘어날 가능성, 중국 브랜드가 유럽 현지 생산에 나서면 새 고객 기회도 생길 수 있음."
-      },
-      "caveat": "모터쇼 현장 반응 기사이며, 판매 실적이나 현지 생산 계획은 확인되지 않았음.",
-      "actions": [
-        "주요 OEM 바이어에게 중국 브랜드 대응으로 사양 상향(디스플레이·ADAS) 계획이 있는지 문의",
-        "유럽 진출 중국 브랜드의 현지 조립·부품 조달 창구 정보 수집"
-      ],
-      "buyer_question": "Given the stronger push from Chinese brands at the Paris show, are you considering content upgrades such as larger displays or standard ADAS on upcoming models?"
-    },
-    {
-      "id": "storm-adam-valencia",
-      "section": "vs",
-      "category": "기상/재해",
-      "title": "폭풍 '아담', 스페인 동부 강타 — 최소 5명 사망, 수천 명 대피",
-      "summary": "발렌시아 지역에 집중호우가 쏟아지며 최소 5명이 숨지고 수천 명이 대피. 남부 해안에는 12시간 300mm 강우 경보가 내려졌었음.",
-      "sources": [
-        {"title": "Euronews — Storm Adam batters eastern Spain", "url": "https://www.euronews.com/2026/10/20/at-least-five-killed-and-thousands-evacuated-as-storm-adam-batters-eastern-spain"},
-        {"title": "Euronews — Southern Valencia coast on alert", "url": "https://www.euronews.com/2026/10/18/southern-valencia-coast-on-alert-as-storm-adam-may-dump-300-mm-of-rain-in-12-hours"}
-      ],
-      "hypothesis": {
-        "products": ["스페인 동부 공장 향 납품 전반"],
+        "products": ["스페인 동부·프랑스 남부 경유 납품 전반"],
         "direction": "운영 리스크",
-        "text": "발렌시아 일대는 완성차·부품 공장과 항만이 있는 자동차 생산 거점이라, 도로·항만이 막히면 납품 일정이나 현지 공급망이 흔들릴 수 있음. 침수 차량 대체 수요가 일부 생길 수도 있으나 규모는 알 수 없음."
+        "text": "A9은 스페인과 프랑스를 잇는 주요 화물 축이라 폐쇄·침수가 반복되면 이베리아 공장 향 트럭 운송이 늦어질 수 있음. 발렌시아 일대는 완성차·부품 공장과 항만이 있는 지역이어서 현지 공급망 차질 시 라인 일정이 바뀔 가능성. 침수 차량 대체 수요는 있을 수 있으나 규모는 알 수 없음."
       },
-      "caveat": "특정 공장이나 항만의 피해·가동 중단은 보도에서 확인되지 않았음.",
+      "caveat": "특정 공장·항만의 피해나 가동 중단은 보도에서 확인되지 않았고, 도로 폐쇄는 수 시간 단위였음. 비는 10/21 낮부터 잦아드는 중.",
       "actions": [
         "발렌시아 인근 납품처와 물류 거점의 가동·입고 상황 확인",
-        "발렌시아 항만 경유 화물이 있다면 도착 일정 재확인"
+        "A9·스페인 국경 구간 운송 중인 화물의 도착 일정 재확인"
       ],
-      "buyer_question": "Has Storm Adam affected operations or inbound deliveries at your facilities or logistics hubs in the Valencia region?"
+      "buyer_question": "Have the floods in the Valencia region or the road closures in southern France affected your operations or any inbound deliveries this week?"
+    },
+    {
+      "id": "rates-france-uk",
+      "section": "vs",
+      "category": "거시경제/금리",
+      "title": "프랑스 10년물 국채금리 2002년 이후 첫 5% 돌파, 영국 물가 3.5%로 11월 금리 인상 유력",
+      "summary": "프랑스는 예산안 처리 난항과 높은 부채로 10년물 금리가 5%를 넘었고, 금요일 무디스 신용등급 결정을 앞두고 강등 전망이 많음. 영국은 9월 물가가 3.5%로 예상보다 크게 올랐고 연료비가 최대 요인이며, 시장은 11/5 영란은행 금리 인상을 거의 확실시함.",
+      "sources": [
+        {"title": "Euronews — French 10-year bond yield tops 5% for first time since 2002", "url": "https://www.euronews.com/2026/10/21/french-government-10-year-bond-yield-tops-5-for-first-time-since-2002"},
+        {"title": "Euronews — UK inflation jumps more than expected", "url": "https://www.euronews.com/2026/10/21/uk-inflation-jumps-more-than-expected-fuelling-rate-hike-expectations"}
+      ],
+      "hypothesis": {
+        "products": ["전 제품군 (신차 생산량 연동)", "인포테인먼트/ADAS (고사양 옵션)"],
+        "direction": "하방 리스크",
+        "text": "프랑스 국채금리가 기업·가계 대출 금리에 반영되고 영국이 금리를 올리면 할부·리스 비용이 커져 두 시장의 신차 수요가 둔화될 수 있음. 이 경우 OEM이 생산 계획을 낮추거나 고사양 옵션 비중을 줄여 대화면 인포테인먼트·ADAS 패키지 테이크레이트가 떨어질 가능성."
+      },
+      "caveat": "금리 상승이 실제 자동차 금융 금리와 신차 주문에 얼마나 반영됐는지는 기사에 수치가 없음. 영란은행 결정과 무디스 등급 결정은 아직 나오지 않았음.",
+      "actions": [
+        "프랑스·영국 시장 비중이 큰 바이어의 최근 딜러 주문(order intake)과 옵션 테이크레이트 추이 확인",
+        "다음 분기 forecast 하향 가능성과 call-off 변동 여부를 미리 문의"
+      ],
+      "buyer_question": "Are you seeing any softening in French or UK order intake or option take rates as financing costs rise, and could this change your next-quarter forecast?"
     }
   ],
   "today_actions": [
-    "프랑스·발렌시아 납품처의 입고 일정과 물류 경로 차질 여부",
-    "최근 4~8주 call-off 추이, Q1 생산 계획과 파워트레인 믹스 변동 (고유가·고금리)",
-    "RFQ에 유럽 현지 조달 비율 조건이 붙을지, EV 플랫폼 SOP·forecast 변경 여부 (2035·Made in Europe)",
-    "중국 브랜드 대응 사양 상향(디스플레이·ADAS) 계획 여부"
+    "프랑스·북부 이탈리아 주말 시위, 발렌시아·A9 홍수 구간 — 납품처 입고 일정과 물류 우회 경로 점검",
+    "겨울 에너지 제한 시 바이어 공장 가동 비상 계획과 forecast·EV/ICE 믹스 반영 여부",
+    "프랑스·영국 딜러 주문과 옵션 테이크레이트 추이, 다음 분기 call-off 변동 가능성",
+    "진행 중인 RFQ·노미네이션 일정 연기 움직임과 디젤 할증 등 물류비 변동"
   ]
 }
