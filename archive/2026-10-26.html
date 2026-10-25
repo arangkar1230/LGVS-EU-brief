@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU 데일리 브리프 — 2026-10-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#FBFBF9; --surface:#FFFFFF; --ink:#16213A; --ink-2:#3A4458; --muted:#5A6475; --line:#E4E6EB;
+  --wine:#A50034; --wine-ink:#7E0028; --wine-tint:#F6E8ED; --on-wine:#FFFFFF;
+  --risk:#B3261E; --risk-bg:#FBEAE8; --ops:#8A5A00; --ops-bg:#FBF1DE; --mix:#3D4F6B; --mix-bg:#E8EDF4; --opp:#1F6B4A; --opp-bg:#E3F2EA;
+  --serif:"Noto Serif KR", serif; --sans:"Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#10141D;--surface:#171C27;--ink:#EEF0F4;--ink-2:#C9CED8;--muted:#98A1B2;--line:#283041;
+  --wine:#E0507A;--wine-ink:#F28AA8;--wine-tint:#2A1A22;--on-wine:#FFFFFF;
+  --risk:#FF8A80;--risk-bg:#3A1F1E;--ops:#F2C066;--ops-bg:#33290F;--mix:#A9BCD9;--mix-bg:#1F2838;--opp:#7FD6A9;--opp-bg:#15302A}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.bar strong{color:var(--ink);font-weight:600}
+.bar strong span{color:var(--wine)}
+.bar select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+
+/* hero */
+.hero{padding:48px 0 36px}
+.hero .day{font-size:15px;color:var(--muted);margin:0 0 6px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7vw,48px);line-height:1.2;letter-spacing:-.01em;margin:0 0 22px}
+.hero .lead{font-family:var(--serif);font-weight:500;font-size:clamp(19px,3.4vw,22px);line-height:1.7;color:var(--ink-2);margin:0;padding-left:18px;border-left:3px solid var(--wine)}
+
+/* today checklist — the one loud element */
+.today{background:var(--wine);color:var(--on-wine);border-radius:18px;padding:28px 28px 22px;margin:8px 0 56px}
+.today h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0 0 4px}
+.today .sub{font-size:14px;opacity:.85;margin:0 0 16px}
+.today ul{list-style:none;margin:0;padding:0}
+.today li{border-top:1px solid rgba(255,255,255,.22)}
+.today label{display:flex;gap:14px;align-items:flex-start;padding:13px 0;cursor:pointer;font-size:17px;font-weight:500;line-height:1.6}
+.today input{appearance:none;flex:none;width:22px;height:22px;margin-top:2px;border:2px solid rgba(255,255,255,.8);border-radius:6px;cursor:pointer;display:grid;place-content:center}
+.today input:checked{background:#fff}
+.today input:checked::after{content:"";width:10px;height:6px;border:solid var(--wine);border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translate(1px,-1px)}
+.today input:checked + span{text-decoration:line-through;opacity:.6}
+.today .count{font-size:13px;opacity:.85;margin-top:10px}
+
+/* overview */
+.overview{margin:0 0 56px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 18px}
+.sec-h h2{white-space:nowrap}
+.sec-h h2{font-family:var(--serif);font-size:24px;font-weight:700;margin:0}
+.sec-h p{margin:0;color:var(--muted);font-size:14px}
+.ov{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ov li{border-bottom:1px solid var(--line)}
+.ov a{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;text-decoration:none;align-items:baseline}
+.ov a:hover .t{color:var(--wine)}
+.ov .k{font-size:13px;font-weight:600;color:var(--muted)}
+.ov .k.top{color:var(--wine)}
+.ov .t{font-weight:600;font-size:16.5px;line-height:1.55}
+
+/* issue */
+.group{margin:0 0 40px}
+.issue{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px 28px;margin:0 0 20px}
+.group.top .issue{box-shadow:inset 0 4px 0 var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.tag{font-size:13px;font-weight:600;line-height:1;padding:7px 10px;border-radius:999px;white-space:nowrap;background:var(--mix-bg);color:var(--mix)}
+.tag.cat{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:500}
+.d-risk{background:var(--risk-bg);color:var(--risk)} .d-ops{background:var(--ops-bg);color:var(--ops)}
+.d-mix{background:var(--mix-bg);color:var(--mix)} .d-opp{background:var(--opp-bg);color:var(--opp)}
+.issue h3{font-family:var(--serif);font-weight:700;font-size:clamp(21px,4vw,25px);line-height:1.45;margin:0 0 12px;letter-spacing:-.005em}
+.issue .sum{color:var(--ink-2);margin:0 0 24px}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 16px}
+.pane{border-radius:12px;padding:18px 18px 16px}
+.pane h4{margin:0 0 8px;font-size:14px;font-weight:700}
+.hyp{background:var(--mix-bg)} .hyp h4{color:var(--mix)}
+.act{background:var(--wine-tint)} .act h4{color:var(--wine-ink)}
+.pane p,.pane ul{margin:0;font-size:15.5px;line-height:1.7}
+.pane ul{padding-left:18px}.pane li+li{margin-top:6px}
+.prods{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 0}
+.prods span{font-size:12.5px;padding:3px 8px;border-radius:6px;background:var(--surface);color:var(--ink-2);border:1px solid var(--line)}
+
+.caveat{display:flex;gap:10px;font-size:15px;color:var(--ink-2);padding:12px 14px;border:1px dashed var(--line);border-radius:10px;margin:0 0 16px}
+.caveat b{flex:none;color:var(--ops);font-weight:700}
+
+.ask{border-left:3px solid var(--wine);padding:4px 0 4px 16px;margin:0 0 18px}
+.ask .lbl{font-size:13px;color:var(--muted);margin:0 0 4px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ask q{display:block;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:17px;line-height:1.6;quotes:none}
+.copy{font:inherit;font-size:13px;font-weight:600;color:var(--wine-ink);background:transparent;border:1px solid var(--line);border-radius:8px;padding:5px 11px;cursor:pointer}
+.copy:hover{border-color:var(--wine)}
+
+details.src{font-size:14px;color:var(--muted)}
+details.src summary{cursor:pointer;width:max-content}
+details.src ul{margin:8px 0 0;padding-left:18px}
+details.src a{color:var(--ink-2)}
+
+/* status + footer */
+.status{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:48px}
+.status .s-ok{color:var(--opp)} .status .s-bad{color:var(--risk)} .status .s-part{color:var(--ops)}
+footer{font-size:13.5px;color:var(--muted);margin-top:14px;line-height:1.7}
+
+@media (max-width:640px){
+  .wrap{padding:0 16px 64px}
+  .hero{padding:36px 0 28px}
+  .today{padding:22px 20px 16px;border-radius:14px}
+  .issue{padding:24px 18px}
+  .duo{grid-template-columns:1fr}
+  .ov a{grid-template-columns:64px 1fr;gap:10px}
+  .sec-h p{flex-basis:100%}
+}
+@media (prefers-reduced-motion:no-preference){
+  .today{animation:rise .5s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script id="report-data" type="application/json">{"date": "2026-10-26", "generated_at": "2026-10-26T07:30:00+09:00", "headline": "주말(10/24~25) 생활비·주거비 시위가 프랑스(1,300명 넘게 체포)·이탈리아·바르셀로나·리스본/포르투로 이어졌고, 프랑스에선 10/31 노란조끼 추가 시위가 예고됨. 일요일엔 세르비아 조기 총선과 불가리아 대선 1차 투표가 치러져 발칸·동유럽 정치 변수가 커짐(불가리아 결선 11/1). VS 쪽에서는 아우디의 첫 미국 공장(40억 달러, 2030년대 초 양산) 발표, 흑해 상선 드론 피격에 따른 물류·보험 리스크, 영국 버넘 총리의 EU 관계 재설정 논의(11/20 정상회의)가 고객 생산 거점과 공급 경로에 걸려 있음.", "sources_status": [{"name": "Euronews", "url": "https://www.euronews.com/", "status": "partial", "note": "홈페이지는 WebFetch 시 '권한 요청 시간 초과(PROVENANCE_REQUIRED)'로 실패. 우회하지 않고, euronews.com 한정 WebSearch로 찾은 최신 기사 목록(euronews.com/just-in, 10/25분)과 개별 기사 6건을 직접 읽음. 바르셀로나 약탈·체포 기사는 같은 사유로 열리지 않아 목록상 제목만 확인함."}, {"name": "eurotopics", "url": "https://www.eurotopics.net/en/", "status": "partial", "note": "홈페이지는 같은 사유로 실패. eurotopics.net 한정 WebSearch로 찾은 토론 목록(eurotopics.net/en/3/debates)과 개별 토론 2건을 직접 읽음. 목록상 최신 토론은 10/23자이며 주말 새 토론은 없었음."}], "items": [{"id": "europe-protests-weekend-oct25", "section": "top", "category": "사회/정치", "title": "주말 생활비·주거비 시위 확산 — 프랑스 1,300명 넘게 체포, 바르셀로나 약탈, 리스본·포르투 농성장 강제 해산… 프랑스 10/31 추가 시위 예고", "summary": "토요일 프랑스 전역에서 40만 명 이상이 생활비 시위에 나섰고 1,300명 넘게 체포됨. 보안 인력 7만 명과 군 경계 병력(상티넬 작전)이 배치됐으며 파리·마르세유·리옹·보르도·툴루즈·렌 등에서 최루탄·물대포가 동원된 충돌이 있었음. 내무장관은 극좌 세력을 지목했고, 노란조끼 운동은 10/31 추가 시위를 예고함. 같은 주말 국민연합(RN)은 오를레앙 전당대회와 일요일 르펜 대선 캠페인 출범 행사를 열었음. 이탈리아에서는 로마·밀라노·토리노·피렌체·볼로냐에서 수천 명이 행진해 9명 체포·87명 입건됐고, 바르셀로나에서는 밤사이 소요·약탈로 128명이 체포됐다는 보도가 나옴. 포르투갈에서는 일요일 새벽 경찰이 리스본 호시우 광장과 포르투의 주거비 항의 텐트 농성장을 해산하며 부상자가 나왔고, 시위대는 다시 모이겠다고 밝힘. eurotopics가 모은 유럽 논평은 강경 진압보다 주거·소득·교육 등 구조적 대응이 필요하다는 쪽과 질서 유지를 강조하는 쪽으로 갈림. 기사들에는 교통·물류 차질 보도가 없었음.", "sources": [{"title": "Euronews — More than 1,300 arrests across France as protesters clashed with police (10/25)", "url": "https://www.euronews.com/2026/10/25/almost-1000-arrests-across-france-as-protesters-clashed-with-police"}, {"title": "Euronews — Thousands march across Italy as protests bring isolated clashes with police (10/25)", "url": "https://www.euronews.com/2026/10/25/thousands-march-across-italy-as-protests-bring-isolated-clashes-with-police"}, {"title": "Euronews — Demonstrators wounded as police break up Lisbon and Porto housing protest camps (10/25)", "url": "https://www.euronews.com/2026/10/25/demonstrators-wounded-as-police-break-up-lisbon-and-porto-housing-protest-camps"}, {"title": "Euronews — Just in (10/25 목록: '128 arrested after night of unrest and looting in Barcelona' 제목 확인)", "url": "https://www.euronews.com/just-in"}, {"title": "eurotopics — Europe: how to respond to the protests? (10/22)", "url": "https://www.eurotopics.net/en/366023/europe-how-to-respond-to-the-protests"}], "hypothesis": {"products": ["프랑스·이탈리아·스페인·포르투갈 OEM 향 납품 전반 (인포테인먼트·ADAS·램프)", "남유럽 신차 판매 연동 전 제품"], "direction": "혼재", "text": "이번 주말에도 교통·물류 차질 보도는 없어 단기 납품 영향은 제한적일 가능성. 다만 시위가 4주째 주말마다 반복되고 10/31 추가 시위가 예고된 데다 프랑스 대선 국면(르펜 캠페인 출범)과 겹치면서, 남유럽 소비 심리와 정책 불확실성이 OEM의 연말~내년 초 생산 계획을 보수적으로 만들 수 있음(하방 리스크). 주말 도심 통제가 잦아지면 일부 거점의 주말 입고·특송 일정에 운영 차질이 생길 수 있음."}, "caveat": "바르셀로나 기사는 본문을 열지 못해 제목 정보만 확인함. 어느 기사에도 도로·철도·항만 차질이나 자동차 공장 피해는 보도되지 않았음. 시위가 신차 주문·차종 믹스에 실제 영향을 준다는 근거는 아직 없음.", "actions": ["프랑스·스페인(카탈루냐)·포르투갈 납품처에 10/31(토) 시위 대비 입고 시간·특송 계획 변경 여부 사전 확인", "남유럽 OEM 바이어에게 10월 딜러 주문 추이와 11~12월 call-off 변동 가능성 문의"], "buyer_question": "With further protests announced for 31 October, are you planning any changes to receiving hours or weekend shifts, and have you seen any softening in dealer orders in France, Spain or Portugal?"}, {"id": "serbia-bulgaria-elections", "section": "top", "category": "지정학/선거", "title": "'선거의 일요일' — 세르비아 조기 총선은 부치치 대 학생운동 대결, 불가리아 대선은 친러 성향 요토바 근소 우위로 11/1 결선", "summary": "세르비아는 10/25 조기 총선(250석, 유권자 645만 명, 18개 명부)을 치렀음. 2024년 11월 노비사드 역 캐노피 붕괴(16명 사망) 이후 이어진 반부패 학생운동이 '학생 명부'로 출마해 부치치가 이끄는 집권 SNS와 맞붙었고, 부치치는 대통령직을 내려놓고 총리 출마로 선거를 이끌었음. 여론조사가 엇갈려 결과 예측이 어렵고, 근소하거나 논란이 있는 결과가 나오면 정치 위기가 길어질 수 있다는 분석. 같은 날 불가리아 대선 1차 투표 출구조사에서는 대러 대화를 주장하고 우크라이나 군사지원에 반대하는 현직 요토바 대통령이 35~36.5%, 친서방 성향 경제학자 규로프 전 총리 대행이 약 32%로 예상보다 접전이었고, 두 사람은 11/1 결선을 치름. 불가리아 유권자들은 에너지값·물가 상승과 흑해 연안 상선 드론 공격에 따른 안보 불안을 주요 이슈로 꼽았음.", "sources": [{"title": "Euronews — Serbia goes to polls to choose between Vučić and student movement (10/25)", "url": "https://www.euronews.com/2026/10/25/serbia-goes-to-polls-to-choose-between-populist-vucic-and-student-movement"}, {"title": "Euronews — Bulgaria votes for president in election dominated by Ukraine war and the economy (10/25)", "url": "https://www.euronews.com/2026/10/25/bulgaria-votes-for-president-in-election-dominated-by-ukraine-war-and-the-economy"}], "hypothesis": {"products": ["세르비아·불가리아·루마니아 등 발칸 지역 Tier-1 공장 향 부품 (와이어링·전자모듈 연계 품목)", "동유럽 생산 차종 연동 전 제품"], "direction": "운영 리스크", "text": "세르비아 선거 결과가 근소하거나 불복 논란으로 이어지면 시위·정국 불안이 길어져, 발칸 지역에 공장을 둔 Tier-1의 현지 생산·통관 일정에 차질이 생길 수 있음. 불가리아에서 대러 대화 노선이 힘을 얻으면 에너지 정책·EU 대러 공조에 변수가 생겨 지역 투자 결정이 늦어질 가능성도 있음."}, "caveat": "세르비아 개표 결과와 투표율, 불가리아 공식 개표 결과는 기사 작성 시점에 나오지 않았음. 두 나라 선거가 자동차 산업이나 특정 공장 운영에 영향을 준다는 보도는 없음. 고객사의 발칸 지역 생산·조달 비중은 별도 확인이 필요함.", "actions": ["세르비아·불가리아·루마니아에 생산 거점이나 2차 협력사를 둔 Tier-1 고객 목록을 정리하고, 선거 후 현지 운영 차질 여부 확인", "해당 지역 경유 물류(육상 통관)의 리드타임 변화가 있는지 물류 파트너에게 확인"], "buyer_question": "Do you expect any impact on your plants or sub-suppliers in Serbia or Bulgaria from the post-election situation, and should we plan any buffer stock for those routes?"}, {"id": "audi-us-plant", "section": "vs", "category": "고객사/생산 거점", "title": "아우디, 첫 자체 미국 공장에 40억 달러 — 조지아주 연 20만 대, Q7·Q8·Q9 등 대형 SUV 2030년대 초 양산", "summary": "아우디가 미국 조지아주 메이컨 인근(피치 카운티)에 약 40억 달러를 들여 첫 100% 자체 미국 공장을 짓기로 하고, 10/24 트럼프 대통령 유세 현장에서 되르너 CEO와 함께 발표함. 연산 최대 20만 대, 직접 고용 약 4,500명 규모이며, 북미용 대형 고급 SUV(로이터 인용 Q7·Q8·Q9)를 생산할 계획. 2027년 준비 작업에 들어가 2030년대 초 양산, 조지아주는 2031년 완전 가동을 목표로 제시함. 미국의 자동차·부품 관세로 아우디가 지난해 약 12억 유로를 부담한 것으로 알려졌지만, 기사는 관세만이 입지 이유라고 단정하지 않음. 아우디는 독일·유럽이 여전히 산업의 중추라고 했으나, 향후 투자가 북미로 옮겨간다는 해석이 나왔고 IG메탈은 독일 직원에 대한 구속력 있는 전망을 요구함. 최종 결정에는 VW그룹 관련 위원회 승인이 남아 있음.", "sources": [{"title": "Euronews — Audi's first US production plant: carmaker strikes deal with Trump (10/25)", "url": "https://www.euronews.com/2026/10/25/audi-invests-four-billion-in-us-plant-carmaker-seals-trump-deal"}], "hypothesis": {"products": ["인포테인먼트·텔레매틱스", "ADAS 카메라", "차량용 램프 (ZKW)", "e-파워트레인 (LG마그나)"], "direction": "혼재", "text": "Q7·Q8 등 일부 대형 SUV 물량이 장기적으로 유럽 공장에서 미국으로 옮겨가면, 해당 차종에 들어가는 유럽 납품 물량의 2030년대 forecast가 줄어들 가능성(하방 리스크). 반대로 미국 신공장용 차세대 SUV 소싱이 새로 열리면 미국 현지 생산 거점을 갖춘 부품사에 RFQ 기회가 생길 수 있음(잠재 기회). 단기(2026~2028년) 유럽 납품에는 직접 영향이 작을 가능성."}, "caveat": "VW그룹 위원회 승인이 남아 있고, 생산 차종은 로이터 인용 보도일 뿐 아우디가 공식 확정하지 않았음. 유럽 공장 물량이 실제로 줄어든다는 발표도 없음. 미국 공장용 부품 소싱 일정·현지화 요건은 기사에 나오지 않음.", "actions": ["아우디·VW그룹 바이어에게 Q7·Q8 후속 차종의 생산지 배분과 유럽 공장 장기 물량 가정 변경 여부 확인", "미국 공장용 차세대 SUV 관련 RFQ 일정·현지 조달(USMCA) 요건 문의, 미국 법인과 대응 체계 공유"], "buyer_question": "With the new Georgia plant announced, how will production of the next-generation large SUVs be split between Europe and the US, and when do you expect to start sourcing for the US site?"}, {"id": "black-sea-shipping-drones", "section": "vs", "category": "물류/해상 운송", "title": "흑해 상선 최소 7척 드론 피격 — 루마니아·불가리아 앞바다, 고위험 해역 지정 시 운송·보험료 상승 우려", "summary": "10/21 이전 며칠 사이 루마니아·불가리아 앞바다(영해 밖 배타적 경제수역)에서 상선 최소 7척이 드론에 맞았다는 보도가 나왔고, 공격 주체는 아직 확인되지 않음. 불가리아는 러시아 대사를 불러 항의했지만 정부는 어느 쪽에도 명확한 증거가 없다고 밝힘. eurotopics가 모은 논평에서 쥐트도이체 차이퉁은 흑해가 고위험 해역이 되면 운송·보험 비용이 오를 것이라고 경고했고, 스웨덴 아프톤블라데트는 나토가 단호히 대응하지 않으면 공격이 발트해로 번질 수 있다고 봄. 10/25 불가리아 대선 보도에서도 흑해 연안 상선 공격이 유권자의 주요 안보 우려로 꼽혔음.", "sources": [{"title": "eurotopics — Drone attacks on cargo ships in the Black Sea (10/21)", "url": "https://www.eurotopics.net/en/365880/drone-attacks-on-cargo-ships-in-the-black-sea"}, {"title": "Euronews — Bulgaria votes for president in election dominated by Ukraine war and the economy (10/25, 흑해 상선 공격 언급)", "url": "https://www.euronews.com/2026/10/25/bulgaria-votes-for-president-in-election-dominated-by-ukraine-war-and-the-economy"}], "hypothesis": {"products": ["루마니아·불가리아·튀르키예 고객 향 해상 납품 전 제품", "흑해 항만(콘스탄차·바르나) 경유 부품·소재"], "direction": "운영 리스크", "text": "흑해가 고위험 해역으로 분류되면 콘스탄차·바르나 등 흑해 항만 경유 화물의 전쟁 보험료와 운임이 오르고 일부 선사가 기항을 줄여, 루마니아(다치아·포드 크라이오바 등 생산 거점)와 튀르키예 향 해상 납품의 리드타임이 길어질 수 있음. 공격이 발트해로 번지면 북유럽 항로까지 같은 위험이 생길 가능성."}, "caveat": "피격 선박명·항만과 공격 주체는 확인되지 않았음. 실제 보험료 인상이나 선사의 기항 중단은 기사에 보도되지 않았음. 당사·고객의 흑해 경유 물동량 규모도 별도 확인이 필요함.", "actions": ["물류 파트너에게 흑해 항만(콘스탄차·바르나) 경유 화물의 전쟁 보험료·운임 변동과 선사 기항 계획 확인", "루마니아·튀르키예 고객 바이어에게 흑해 경유 입고 현황과 육상 대체 경로(중부유럽 경유) 사용 의향 문의"], "buyer_question": "Given the recent drone attacks on ships in the Black Sea, would you prefer that we reroute deliveries to your Romanian or Turkish plants overland, and how much safety stock would you like us to hold?"}, {"id": "uk-eu-reset-burnham", "section": "vs", "category": "EU 통상/영국", "title": "영국 버넘 총리, EU 자유이동 복귀 '솔직한 논의' 언급 — 11/20 영국-EU 정상회의 앞두고 관계 재설정 선택지 제시 예고", "summary": "7월 취임한 앤디 버넘 영국 총리가 EU 자유이동 규정 재도입을 향후 대EU 관계의 일부로 열어둘 수 있다며 이민 문제에 대해 '솔직한 논의'를 하자고 밝힘. 언젠가 EU 재가입 신청 가능성도 언급했지만 유로·솅겐 가입은 배제함. 다만 2024년 노동당 공약(자유이동·단일시장·관세동맹 복귀 배제)을 지키겠다는 입장이어서, 큰 변화에는 다음 총선(2029년 예정)의 신임이 필요할 수 있다는 분석. 영국과 EU는 식품·음료, 청년 이동, 배출권거래제 연계 합의를 추진 중이며, 버넘은 11/20 브뤼셀 영국-EU 정상회의 즈음 관계 강화 선택지를 내놓겠다고 함. 영국개혁당 패라지 대표는 '브렉시트 배신'이라고 비판함.", "sources": [{"title": "Euronews — UK Prime Minister Andy Burnham wants 'honest discussion' on return to EU free movement (10/25)", "url": "https://www.euronews.com/2026/10/25/uk-prime-minister-andy-burnham-wants-honest-discussion-on-return-to-eu-free-movement"}], "hypothesis": {"products": ["영국 내 OEM 생산 차종 향 인포테인먼트·ADAS·램프", "EU↔영국 간 부품 이동(원산지 규정 적용 품목)"], "direction": "잠재 기회", "text": "영국-EU 관계가 배출권거래제 연계 등으로 가까워지면 장기적으로 영국 생산 차량의 탄소 비용·규제 정합성이 개선되고 통관 부담이 줄어, 영국 공장을 둔 OEM의 투자·생산 계획에 긍정적일 수 있음. 다만 관세동맹·단일시장 복귀는 배제된 만큼 부품 통관·원산지 규정 부담은 당분간 그대로일 가능성이 큼."}, "caveat": "11/20 정상회의에서 무엇이 합의될지, 자동차·부품 교역(원산지 규정, 배터리 규정 등)이 의제에 포함되는지는 기사에 나오지 않았음. 자유이동 발언은 방향 제시일 뿐 정책 결정이 아님.", "actions": ["영국 공장 보유 OEM 바이어에게 11/20 영국-EU 정상회의를 계기로 한 영국 생산 계획·소싱 전략 변화 여부 문의", "EU↔영국 납품 품목의 원산지 증명·통관 리드타임 현황을 물류·통관 담당과 점검"], "buyer_question": "Ahead of the UK-EU summit on 20 November, are you anticipating any changes to your UK production plans or to customs and rules-of-origin requirements for parts we ship from the EU?"}], "today_actions": ["남유럽 시위 — 프랑스·스페인·포르투갈 납품처에 10/31 시위 대비 입고 계획 확인, 10월 딜러 주문·11~12월 call-off 변동 문의", "세르비아·불가리아 선거 — 발칸 지역 Tier-1 거점 목록 정리, 선거 후 현지 운영·육상 통관 리드타임 확인", "아우디 미국 공장 — Q7·Q8 후속 차종 생산지 배분과 유럽 장기 물량 가정 확인, 미국 공장 RFQ 일정·현지화 요건 문의", "흑해 상선 피격 — 콘스탄차·바르나 경유 보험료·운임 점검, 루마니아·튀르키예 고객과 육상 대체 경로·안전재고 협의", "영국-EU 관계 재설정 — 영국 공장 OEM의 생산·소싱 계획 변화 문의, EU↔영국 원산지·통관 리드타임 점검"]}</script>
+<script id="archive-data" type="application/json">["2026-10-26", "2026-10-25", "2026-10-24", "2026-10-23", "2026-10-22", "2026-10-21"]</script>
+<script>
+const d = JSON.parse(document.getElementById('report-data').textContent);
+const archive = JSON.parse(document.getElementById('archive-data').textContent);
+const base = '../';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dirClass = t => /하방|리스크 ?상승|위험/.test(t) && !/운영/.test(t) ? 'd-risk' : /운영/.test(t) ? 'd-ops' : /기회|상방/.test(t) ? 'd-opp' : 'd-mix';
+const statusMap = {ok:['수집 완료','s-ok'], partial:['일부 수집','s-part'], blocked:['접근 차단','s-bad'], error:['수집 실패','s-bad']};
+const days = ['일','월','화','수','목','금','토'];
+const dt = new Date(d.date + 'T00:00:00');
+const dateLabel = `${dt.getMonth()+1}월 ${dt.getDate()}일 ${days[dt.getDay()]}요일`;
+const key = 'eu-brief-checked-' + d.date;
+let checked = [];
+try { checked = JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) {}
+
+const topItems = d.items.filter(i => i.section === 'top');
+const vsItems = d.items.filter(i => i.section === 'vs');
+
+const issue = it => `
+<article class="issue" id="${esc(it.id)}">
+  <div class="tags"><span class="tag ${dirClass(it.hypothesis.direction)}">${esc(it.hypothesis.direction)}</span><span class="tag cat">${esc(it.category)}</span></div>
+  <h3>${esc(it.title)}</h3>
+  <p class="sum">${esc(it.summary)}</p>
+  <div class="duo">
+    <div class="pane hyp"><h4>VS 제품 영향 가설</h4><p>${esc(it.hypothesis.text)}</p>
+      <div class="prods">${it.hypothesis.products.map(p=>`<span>${esc(p)}</span>`).join('')}</div></div>
+    <div class="pane act"><h4>바이어에게 확인할 것</h4><ul>${it.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div>
+  </div>
+  <div class="caveat"><b>미확인</b><span>${esc(it.caveat)}</span></div>
+  <div class="ask"><div class="lbl"><span>바이어 질문 예시</span><button class="copy" type="button">복사</button></div><q>${esc(it.buyer_question)}</q></div>
+  <details class="src"><summary>출처 ${it.sources.length}건</summary><ul>${it.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></details>
+</article>`;
+
+document.getElementById('app').innerHTML = `
+<div class="bar">
+  <strong>EU 데일리 브리프 <span>/</span> VS 유럽영업</strong>
+  <label>지난 리포트 <select id="arch" aria-label="지난 리포트">${archive.map(a=>`<option value="${base}archive/${a}.html" ${a===d.date?'selected':''}>${a}</option>`).join('')}</select></label>
+</div>
+<header class="hero">
+  <p class="day">${esc(d.date)}</p>
+  <h1>${dateLabel}의 유럽</h1>
+  <p class="lead">${esc(d.headline)}</p>
+</header>
+<section class="today" aria-labelledby="today-h">
+  <h2 id="today-h">오늘 바이어에게 확인할 것</h2>
+  <p class="sub">뉴스는 가설입니다. 판매 추이·재고·발주 데이터로 확인하세요.</p>
+  <ul>${d.today_actions.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${checked.includes(i)?'checked':''}><span>${esc(t)}</span></label></li>`).join('')}</ul>
+  <div class="count" id="count"></div>
+</section>
+<section class="overview">
+  <div class="sec-h"><h2>오늘의 5가지</h2><p>대형 이슈 ${topItems.length} · VS 연관 ${vsItems.length}</p></div>
+  <ol class="ov">${d.items.map(i=>`<li><a href="#${esc(i.id)}"><span class="k ${i.section==='top'?'top':''}">${i.section==='top'?'대형 이슈':'VS 연관'}</span><span class="t">${esc(i.title)}</span></a></li>`).join('')}</ol>
+</section>
+<section class="group top">
+  <div class="sec-h"><h2>오늘의 가장 큰 이슈</h2><p>유럽 전체를 움직인 뉴스</p></div>
+  ${topItems.map(issue).join('')}
+</section>
+<section class="group">
+  <div class="sec-h"><h2>VS본부 연관 이슈</h2><p>전장 사업과 직접 닿는 뉴스</p></div>
+  ${vsItems.map(issue).join('')}
+</section>
+<div class="status">${d.sources_status.map(s=>{const [l,c]=statusMap[s.status]||[s.status,''];return `<span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> <span class="${c}">${esc(l)}</span></span>`}).join('')}</div>
+<footer>뉴스 기반 가설이며 수요 변화를 확정하지 않습니다. 생성 ${esc(d.generated_at)}</footer>`;
+
+document.getElementById('arch').addEventListener('change', e => { if (e.target.value) location.href = e.target.value; });
+const boxes = [...document.querySelectorAll('.today input')];
+const updateCount = () => { const n = boxes.filter(b=>b.checked).length; document.getElementById('count').textContent = `${n} / ${boxes.length} 확인 완료`; };
+boxes.forEach(b => b.addEventListener('change', () => {
+  const sel = boxes.filter(x=>x.checked).map(x=>+x.dataset.i);
+  try { localStorage.setItem(key, JSON.stringify(sel)); } catch(e) {}
+  updateCount();
+}));
+updateCount();
+document.querySelectorAll('.copy').forEach(btn => btn.addEventListener('click', async () => {
+  const text = btn.closest('.ask').querySelector('q').textContent;
+  try { await navigator.clipboard.writeText(text); btn.textContent = '복사됨'; } catch(e) { btn.textContent = '복사 실패'; }
+  setTimeout(() => btn.textContent = '복사', 1600);
+}));
+</script>
+</body>
+</html>
