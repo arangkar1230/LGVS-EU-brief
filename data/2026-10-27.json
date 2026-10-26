@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T07:35:00+09:00",
+  "headline": "세르비아 총선에서 학생운동 '학생 명부'가 과반(135석 이상 전망)을 얻으며 14년 부치치 체제가 막을 내렸고, 우크라이나·러시아·미국은 11월 아부다비 3자 협상 재개를 확정함(동시에 보로네시 드론 공격 등 교전은 계속). VS 쪽에서는 이란 외교 진전 기대로 브렌트유가 하루 6% 넘게 떨어진 점, VW그룹의 5년 임금 동결 검토 보도와 파업 경고, 브라질 룰라 4선으로 EU-메르코수르 협정 유지 전망이 고객 생산·원가·수출 시장에 걸려 있음.",
+  "sources_status": [
+    {
+      "name": "Euronews",
+      "url": "https://www.euronews.com/",
+      "status": "partial",
+      "note": "홈페이지는 WebFetch 시 '권한 요청 시간 초과(PROVENANCE_REQUIRED)'로 실패. 우회하지 않고, euronews.com 한정 WebSearch로 찾은 10/26 날짜별 기사 목록(euronews.com/2026/10/26, 38건)과 개별 기사 6건을 직접 읽음. 일부 기사(EU의 세르비아 반응 기사)는 같은 사유로 열리지 않아 목록상 제목만 확인함."
+    },
+    {
+      "name": "eurotopics",
+      "url": "https://www.eurotopics.net/en/",
+      "status": "partial",
+      "note": "홈페이지는 같은 사유로 실패. eurotopics.net 한정 WebSearch로 찾은 토론 목록(eurotopics.net/en/3/debates, 10/26자 신규 토론 4건 포함)과 개별 토론 4건을 직접 읽음."
+    }
+  ],
+  "items": [
+    {
+      "id": "serbia-student-list-wins",
+      "section": "top",
+      "category": "지정학/선거",
+      "title": "세르비아 '정치 지진' — 학생 명부 과반 확보 전망, 부치치 패배 인정… 14년 집권 마감, EU 가입 재추진 여부 주목",
+      "summary": "10/25 세르비아 조기 총선 잠정 결과 반부패 학생운동이 만든 '학생 명부'가 250석 중 135~140석을 얻어 과반을 차지할 것으로 보이고, 부치치의 집권 세르비아진보당(SNS)은 약 105석에 그칠 전망. 부치치는 표본 집계상 패배가 분명하다며 결과를 인정함. 최종 개표와 정부 구성 절차·일정은 아직 나오지 않았음. 새 정부는 경제·재정·에너지, EU 가입 협상, 코소보, 러시아·중국과의 관계를 정리해야 하고 사법·공영방송·선거제도 개편도 예상됨. 현지 정치학자는 내부 개혁이 우선이라 EU 통합의 빠른 진전에는 회의적이라고 봄. eurotopics가 모은 유럽 논평은 '오르반에 이은 남동유럽의 선거 지진'(FT), '권위주의에 대한 거부'(SRF)라는 평가와 함께, EU가 그동안 부치치를 안정의 보증인으로 대우했기에 'EU의 승리'로 볼 수 없다는 비판(디 차이트), 부패 청산에 시간이 걸릴 것이라는 전망(유타르니 리스트)이 나왔음.",
+      "sources": [
+        {
+          "title": "Euronews — Student List wins Serbian election in political earthquake as Vučić concedes defeat (10/25)",
+          "url": "https://www.euronews.com/2026/10/25/vucic-concedes-defeat-in-pivotal-serbian-elections-says-student-movement-has-won"
+        },
+        {
+          "title": "Euronews — Serbia's strongman toppled by student-backed movement (10/26)",
+          "url": "https://www.euronews.com/2026/10/26/serbias-strongman-toppled-by-student-backed-movement"
+        },
+        {
+          "title": "eurotopics — Vučić voted out: A fresh start for Serbia? (10/26)",
+          "url": "https://www.eurotopics.net/en/366173/vui-voted-out-a-fresh-start-for-serbia"
+        },
+        {
+          "title": "Euronews — News 26 October 2026 (목록: 'EU hails Serbia's political upheaval…' 제목 확인)",
+          "url": "https://www.euronews.com/2026/10/26"
+        }
+      ],
+      "hypothesis": {
+        "products": [
+          "세르비아·발칸 지역 OEM·Tier-1 공장 향 부품 (인포테인먼트·ADAS·램프 연계 모듈)",
+          "발칸 육상 통관 경유 납품 전 제품"
+        ],
+        "direction": "혼재",
+        "text": "평화적 정권 교체로 시위·정국 불안이 잦아들고 EU 가입 협상이 다시 움직이면, 중장기적으로 세르비아 내 제조 투자 환경과 EU와의 통관·규제 정합성이 개선될 수 있음(잠재 기회). 반면 정부 구성 과도기에 산업 보조금·외국인 투자 계약·에너지 정책이 재검토되면, 현지에 공장을 둔 고객사의 투자·증설 결정이 몇 달간 미뤄질 가능성도 있음(하방 리스크)."
+      },
+      "caveat": "최종 개표 결과, 정부 구성 일정, 새 정부의 외국인 투자·산업 정책은 아직 나오지 않았음. 선거 결과가 특정 자동차 공장이나 부품 조달에 영향을 준다는 보도는 없음. 고객사의 세르비아 생산·조달 비중은 별도 확인이 필요함.",
+      "actions": [
+        "세르비아에 생산 거점이나 2차 협력사를 둔 고객 목록을 정리하고, 정권 교체에 따른 투자·증설 계획 보류 여부 확인",
+        "세르비아 경유 육상 통관 리드타임에 변화가 있는지 물류 파트너에게 확인"
+      ],
+      "buyer_question": "Following the change of government in Serbia, do you expect any changes to your investment or production plans there, or to customs procedures for parts we deliver into the country?"
+    },
+    {
+      "id": "ukraine-russia-us-talks-abu-dhabi",
+      "section": "top",
+      "category": "지정학/우크라이나",
+      "title": "우크라이나·러시아·미국, 11월 아부다비 3자 협상 재개 확정 — 그 사이 보로네시 드론 공격·우크라이나 에너지 시설 피격 계속",
+      "summary": "러시아가 지난주 동의한 11월 우크라이나·러시아·미국 3자 협상이 아부다비에서 열리는 것으로 정리됐고, 젤렌스키 대통령도 참석을 확인함. 2025년 몇 차례 직접 협상은 성과 없이 끝나 2026년 초부터 멈춰 있었음. 우크라이나는 영토 문제는 정상급에서, 나머지는 기술 실무그룹에서 다루자는 입장. 지난주 금요일에는 헤르손주 올레시키 일대 국지적 휴전에 양측이 합의함. 그러나 일요일 밤 우크라이나 드론 공격으로 러시아 보로네시에서 2명이 숨지고 17명이 다쳤고, 러시아는 같은 밤 드론 140대·미사일 4발을 쏴 우크라이나 흐멜니츠키주 에너지 시설이 피해를 입어 긴급 정전이 시행됨. 앞서 위트코프 특사-푸틴 회담에 대해 eurotopics가 모은 유럽 논평 다수(FAZ·코리에레 델라 세라·스펙테이터 등)는 푸틴이 서방의 선거 일정을 기다리며 시간을 끌고 있어 휴전이 오히려 멀어졌다고 평가함.",
+      "sources": [
+        {
+          "title": "Euronews — Ukrainian drone strike on Voronezh kills two as Kyiv and Moscow prepare to restart talks (10/26)",
+          "url": "https://www.euronews.com/2026/10/26/ukrainian-drone-strike-on-voronezh-kills-two-as-kyiv-and-moscow-prepare-to-restart-talks"
+        },
+        {
+          "title": "eurotopics — Witkoff meets Putin: the upshot? (10/23)",
+          "url": "https://www.eurotopics.net/en/366022/witkoff-meets-putin-the-upshot"
+        }
+      ],
+      "hypothesis": {
+        "products": [
+          "동유럽(폴란드·슬로바키아·체코·헝가리·루마니아) OEM 공장 향 전 제품",
+          "유럽 신차 수요 연동 인포테인먼트·ADAS·램프"
+        ],
+        "direction": "혼재",
+        "text": "협상이 실제로 진전되면 에너지 가격·소비 심리 안정 기대로 2027년 유럽 신차 수요 전망이 개선될 수 있음(잠재 기회). 다만 유럽 언론 대부분이 단기 휴전 가능성을 낮게 보고 있고 겨울철 에너지 시설 공격이 이어지고 있어, 당분간은 동유럽 생산 거점의 에너지 비용·물류 불확실성이 유지될 가능성이 큼."
+      },
+      "caveat": "협상의 구체적 날짜와 의제, EU의 참여 여부는 기사에 나오지 않았음. 국지적 휴전이 확대된다는 근거도 없음. 협상이 자동차 수요나 고객 생산 계획에 영향을 준다는 보도는 없음.",
+      "actions": [
+        "동유럽 공장 보유 OEM 바이어에게 겨울철 에너지 공급·가격 리스크를 반영한 11~12월 생산 계획(call-off) 변동 여부 확인",
+        "2027년 forecast 업데이트 시 지정학 시나리오(협상 진전/교착)별 물량 가정이 있는지 문의"
+      ],
+      "buyer_question": "Are you building any winter energy or geopolitical scenarios into your November–December call-offs or your 2027 volume forecast that we should reflect in our planning?"
+    },
+    {
+      "id": "oil-plunge-iran-diplomacy",
+      "section": "vs",
+      "category": "에너지/원자재",
+      "title": "브렌트유 하루 6% 넘게 급락 — 이란 외교 진전 기대에 117달러→110달러, 다만 전쟁 전(72달러)보다 여전히 높고 후티 공격 위험 남아",
+      "summary": "10/26 브렌트유는 금요일 종가 약 117.4달러(3월 이후 최고)에서 약 110달러로 6% 넘게 떨어졌고, WTI는 약 2% 내린 101.5달러를 기록함. 카타르 중재단이 미국과 조율해 테헤란을 찾고 사우디·파키스탄·튀르키예 당국자도 방문할 예정이라는 소식에 외교 해결 기대가 커졌기 때문. 다만 후티 반군이 주말에도 사우디를 공격했다고 밝혀 공급 위험은 남아 있음. 걸프(이란 제외) 원유 수출은 9월에 전쟁 전 수준을 회복했지만, 약 40%가 호르무즈 해협 대신 파이프라인으로 우회하고 있음. 유럽 증시는 DAX 주도로 0.3~1% 올랐고, 이번 주 연준(수)·ECB(목) 회의가 예정돼 있음.",
+      "sources": [
+        {
+          "title": "Euronews — Oil plunges more than 6% from near wartime highs as diplomacy over Iran seemingly gathers pace (10/26)",
+          "url": "https://www.euronews.com/2026/10/26/oil-plunges-more-than-6-from-near-wartime-highs-as-diplomacy-over-iran-seemingly-gathers"
+        }
+      ],
+      "hypothesis": {
+        "products": [
+          "유럽·아시아 간 해상 운송 전 제품 (운임·유류할증료)",
+          "램프(ZKW)·하우징 등 석유화학 소재 비중 높은 품목",
+          "e-파워트레인 (내연기관 대비 EV 선호도 연동)"
+        ],
+        "direction": "혼재",
+        "text": "유가가 안정되면 해상·육상 운임의 유류할증료와 플라스틱·소재 원가 부담이 줄고, 고객사의 원가 압박도 완화될 수 있음. 반대로 연료비 부담이 줄면 고유가가 밀어주던 EV 전환 수요가 다소 둔화될 가능성이 있어, e-파워트레인 물량 가정에는 하방 요인이 될 수 있음. 하루 급락만으로 추세 전환을 판단하기는 이름."
+      },
+      "caveat": "가격 하락이 이어질지는 이란 협상 결과와 후티 공격에 달려 있어 불확실함. 유럽 가스 가격과 자동차 업종 주가는 기사에 나오지 않았음. 유가 하락이 운임·소재 단가에 반영되는 시차도 확인되지 않았음.",
+      "actions": [
+        "물류 파트너에게 11월 유류할증료(BAF) 조정 일정과 아시아-유럽 해상 운임 전망 확인",
+        "고객사가 최근 고유가를 이유로 요청한 원가 조정·가격 협의가 있다면 진행 상황과 기준 유가 확인",
+        "EV 플랫폼 고객에게 연료비 변화에 따른 EV 주문 추이와 e-파워트레인 forecast 변경 여부 문의"
+      ],
+      "buyer_question": "With oil prices easing this week, are you seeing any change in EV order intake, and should we expect any revision to the e-powertrain volume forecast for Q1 2027?"
+    },
+    {
+      "id": "vw-global-pay-freeze",
+      "section": "vs",
+      "category": "고객사/구조조정",
+      "title": "VW그룹, 전 세계 66만 명 '5년 임금 동결' 검토 보도 — 과잉 생산능력·판매 부진 이유, 노조는 파업 경고",
+      "summary": "언론 보도에 따르면 VW그룹이 심각한 과잉 생산능력과 판매 부진을 이유로 전 세계 직원 약 66만 명을 대상으로 5년간 임금을 동결하는 방안을 검토 중이며, 노조는 파업을 경고하고 있음. 회사는 아직 공식 확인하지 않았음. eurotopics가 모은 논평에서 체코 Info.cz는 늦었지만 인건비에 손을 댄 것은 정당하며 관건은 노조 압박에도 경영진이 버티는지라고 봤고, 슬로바키아 프라우다는 포르쉐 등 고급차를 만드는 브라티슬라바 공장 직원의 불안을 전하며 동결이 생산 중단 사태로 이어질 수 있다고 우려함.",
+      "sources": [
+        {
+          "title": "eurotopics — Global pay freeze at VW? (10/22)",
+          "url": "https://www.eurotopics.net/en/366027/global-pay-freeze-at-vw"
+        }
+      ],
+      "hypothesis": {
+        "products": [
+          "인포테인먼트·텔레매틱스",
+          "ADAS 카메라",
+          "차량용 램프 (ZKW)",
+          "e-파워트레인 (LG마그나)"
+        ],
+        "direction": "하방 리스크",
+        "text": "VW그룹이 과잉 생산능력을 공식 이유로 든 만큼, 향후 생산량 조정과 함께 부품 공급사에 대한 단가 인하·물량 축소 압박이 커질 가능성. 임금 동결이 확정돼 노조가 파업에 나서면 독일·슬로바키아 등 VW 공장의 일시 생산 중단으로 call-off가 갑자기 줄어 재고가 쌓이는 운영 리스크도 생길 수 있음."
+      },
+      "caveat": "임금 동결은 언론 보도 수준이며 VW가 공식 확인하지 않았음. 파업 일정이나 공장별 생산 조정 계획은 보도되지 않았음. 당사 VW그룹 향 차종별 물량 노출도는 별도 확인이 필요함.",
+      "actions": [
+        "VW그룹(VW·아우디·포르쉐·스코다·세아트) 바이어에게 11~12월 call-off 변동 가능성과 파업 대비 비상 계획 확인",
+        "브라티슬라바 등 VW 공장 향 재고·운송 중 물량을 점검해 생산 중단 시 보관·납기 조정 방안 준비",
+        "내년 연간 가격 협상(LTA)에서 원가 절감 요구 수준이 커질지 구매 담당에게 사전 문의"
+      ],
+      "buyer_question": "In light of reports about a group-wide pay freeze and possible strikes, do you foresee any interruptions at your plants in the coming months, and how should we manage deliveries and stock if call-offs change at short notice?"
+    },
+    {
+      "id": "lula-reelected-eu-mercosur",
+      "section": "vs",
+      "category": "통상/수출 시장",
+      "title": "브라질 룰라 4선(51.8%) — 유럽 지도자들 일제히 환영, 1월 서명한 EU-메르코수르 협정 유지 전망… 보우소나루는 불복",
+      "summary": "10/25 브라질 대선 결선에서 룰라 대통령이 51.8%를 얻어 플라비우 보우소나루(48.2%)를 약 440만 표 차로 꺾고 4선에 성공함. 폰데어라이엔 집행위원장은 '민주주의와 다자주의가 이겼다'고 했고, 코스타 상임의장·마크롱·포르투갈 몬테네그루 총리 등도 축하함. EU는 보우소나루 후보가 이기면 올해 1월 서명한 EU-메르코수르(브라질·아르헨티나·파라과이·우루과이) 무역협정이 흔들릴 것을 우려해 왔음. 보우소나루는 투표시간 연장을 문제 삼아 선거 무효를 주장했고, 트럼프 대통령도 근거 없이 '조작된 것 같다'고 언급함. 덴마크 폴리티켄은 의회와 주지사 다수가 중도우파여서 룰라의 국정 운영이 쉽지 않을 것으로 봄.",
+      "sources": [
+        {
+          "title": "Euronews — 'Democracy has won': Europe celebrates Lula's surprise victory in Brazil (10/26)",
+          "url": "https://www.euronews.com/2026/10/26/democracy-has-won-europe-celebrates-lulas-surprise-victory-in-brazil"
+        },
+        {
+          "title": "eurotopics — Brazil: Lula re-elected as President (10/26)",
+          "url": "https://www.eurotopics.net/en/366175/brazil-lula-re-elected-as-president"
+        }
+      ],
+      "hypothesis": {
+        "products": [
+          "유럽 OEM의 남미 수출 차종 향 인포테인먼트·ADAS·램프",
+          "유럽 OEM 브라질·아르헨티나 현지 공장 향 CKD/부품"
+        ],
+        "direction": "잠재 기회",
+        "text": "EU-메르코수르 협정이 유지돼 단계적 관세 인하가 진행되면, 유럽 OEM의 남미 완성차 수출과 현지 공장 향 부품 공급이 늘어 관련 차종의 VS 제품 물량이 중장기적으로 증가할 가능성. 다만 브라질 의회가 중도우파 다수이고 선거 불복 논란이 있어 비준·이행 속도는 느릴 수 있음."
+      },
+      "caveat": "기사는 협정의 비준·잠정 적용 현황과 자동차·부품 관세 인하 일정을 다루지 않았음. 유럽 OEM이 남미 수출이나 현지 생산을 늘린다는 발표도 없음. 당사 제품이 장착된 차종의 남미 판매 비중은 별도 확인이 필요함.",
+      "actions": [
+        "남미(브라질·아르헨티나)에 수출하거나 현지 공장을 둔 유럽 OEM 바이어에게 메르코수르 협정 이행에 따른 2027~2028년 물량 계획 변화 문의",
+        "통상 담당과 EU-메르코수르 협정의 자동차 부품 관세 인하 일정·원산지 규정을 확인해 고객 대응 자료 준비"
+      ],
+      "buyer_question": "Now that the EU-Mercosur agreement looks set to stay on track after Brazil's election, are you planning any increase in exports or local production in South America that would affect volumes for the parts we supply?"
+    }
+  ],
+  "today_actions": [
+    "세르비아 정권 교체 — 세르비아 거점 고객·2차 협력사 목록 정리, 투자·증설 보류 여부와 육상 통관 리드타임 확인",
+    "우크라이나 협상 재개 — 동유럽 공장 OEM에 겨울철 에너지 리스크 반영한 11~12월 call-off와 2027 forecast 시나리오 문의",
+    "유가 급락 — 물류 파트너와 11월 유류할증료·해상 운임 점검, EV 고객에 주문 추이와 e-파워트레인 forecast 변경 여부 확인",
+    "VW 임금 동결 보도 — VW그룹 바이어에게 call-off 변동·파업 대비 계획 확인, 브라티슬라바 등 향 재고·운송 물량 점검",
+    "룰라 재선·EU-메르코수르 — 남미 수출·현지 생산 유럽 OEM에 2027~28년 물량 계획 문의, 부품 관세 인하 일정 확인"
+  ]
+}
