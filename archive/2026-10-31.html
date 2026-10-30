@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU 데일리 브리프 — 2026-10-31</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#FBFBF9; --surface:#FFFFFF; --ink:#16213A; --ink-2:#3A4458; --muted:#5A6475; --line:#E4E6EB;
+  --wine:#A50034; --wine-ink:#7E0028; --wine-tint:#F6E8ED; --on-wine:#FFFFFF;
+  --risk:#B3261E; --risk-bg:#FBEAE8; --ops:#8A5A00; --ops-bg:#FBF1DE; --mix:#3D4F6B; --mix-bg:#E8EDF4; --opp:#1F6B4A; --opp-bg:#E3F2EA;
+  --serif:"Noto Serif KR", serif; --sans:"Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#10141D;--surface:#171C27;--ink:#EEF0F4;--ink-2:#C9CED8;--muted:#98A1B2;--line:#283041;
+  --wine:#E0507A;--wine-ink:#F28AA8;--wine-tint:#2A1A22;--on-wine:#FFFFFF;
+  --risk:#FF8A80;--risk-bg:#3A1F1E;--ops:#F2C066;--ops-bg:#33290F;--mix:#A9BCD9;--mix-bg:#1F2838;--opp:#7FD6A9;--opp-bg:#15302A}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.bar strong{color:var(--ink);font-weight:600}
+.bar strong span{color:var(--wine)}
+.bar select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+
+/* hero */
+.hero{padding:48px 0 36px}
+.hero .day{font-size:15px;color:var(--muted);margin:0 0 6px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7vw,48px);line-height:1.2;letter-spacing:-.01em;margin:0 0 22px}
+.hero .lead{font-family:var(--serif);font-weight:500;font-size:clamp(19px,3.4vw,22px);line-height:1.7;color:var(--ink-2);margin:0;padding-left:18px;border-left:3px solid var(--wine)}
+
+/* today checklist — the one loud element */
+.today{background:var(--wine);color:var(--on-wine);border-radius:18px;padding:28px 28px 22px;margin:8px 0 56px}
+.today h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0 0 4px}
+.today .sub{font-size:14px;opacity:.85;margin:0 0 16px}
+.today ul{list-style:none;margin:0;padding:0}
+.today li{border-top:1px solid rgba(255,255,255,.22)}
+.today label{display:flex;gap:14px;align-items:flex-start;padding:13px 0;cursor:pointer;font-size:17px;font-weight:500;line-height:1.6}
+.today input{appearance:none;flex:none;width:22px;height:22px;margin-top:2px;border:2px solid rgba(255,255,255,.8);border-radius:6px;cursor:pointer;display:grid;place-content:center}
+.today input:checked{background:#fff}
+.today input:checked::after{content:"";width:10px;height:6px;border:solid var(--wine);border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translate(1px,-1px)}
+.today input:checked + span{text-decoration:line-through;opacity:.6}
+.today .count{font-size:13px;opacity:.85;margin-top:10px}
+
+/* overview */
+.overview{margin:0 0 56px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 18px}
+.sec-h h2{white-space:nowrap}
+.sec-h h2{font-family:var(--serif);font-size:24px;font-weight:700;margin:0}
+.sec-h p{margin:0;color:var(--muted);font-size:14px}
+.ov{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ov li{border-bottom:1px solid var(--line)}
+.ov a{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;text-decoration:none;align-items:baseline}
+.ov a:hover .t{color:var(--wine)}
+.ov .k{font-size:13px;font-weight:600;color:var(--muted)}
+.ov .k.top{color:var(--wine)}
+.ov .t{font-weight:600;font-size:16.5px;line-height:1.55}
+
+/* issue */
+.group{margin:0 0 40px}
+.issue{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px 28px;margin:0 0 20px}
+.group.top .issue{box-shadow:inset 0 4px 0 var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.tag{font-size:13px;font-weight:600;line-height:1;padding:7px 10px;border-radius:999px;white-space:nowrap;background:var(--mix-bg);color:var(--mix)}
+.tag.cat{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:500}
+.d-risk{background:var(--risk-bg);color:var(--risk)} .d-ops{background:var(--ops-bg);color:var(--ops)}
+.d-mix{background:var(--mix-bg);color:var(--mix)} .d-opp{background:var(--opp-bg);color:var(--opp)}
+.issue h3{font-family:var(--serif);font-weight:700;font-size:clamp(21px,4vw,25px);line-height:1.45;margin:0 0 12px;letter-spacing:-.005em}
+.issue .sum{color:var(--ink-2);margin:0 0 24px}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 16px}
+.pane{border-radius:12px;padding:18px 18px 16px}
+.pane h4{margin:0 0 8px;font-size:14px;font-weight:700}
+.hyp{background:var(--mix-bg)} .hyp h4{color:var(--mix)}
+.act{background:var(--wine-tint)} .act h4{color:var(--wine-ink)}
+.pane p,.pane ul{margin:0;font-size:15.5px;line-height:1.7}
+.pane ul{padding-left:18px}.pane li+li{margin-top:6px}
+.prods{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 0}
+.prods span{font-size:12.5px;padding:3px 8px;border-radius:6px;background:var(--surface);color:var(--ink-2);border:1px solid var(--line)}
+
+.caveat{display:flex;gap:10px;font-size:15px;color:var(--ink-2);padding:12px 14px;border:1px dashed var(--line);border-radius:10px;margin:0 0 16px}
+.caveat b{flex:none;color:var(--ops);font-weight:700}
+
+.ask{border-left:3px solid var(--wine);padding:4px 0 4px 16px;margin:0 0 18px}
+.ask .lbl{font-size:13px;color:var(--muted);margin:0 0 4px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ask q{display:block;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:17px;line-height:1.6;quotes:none}
+.copy{font:inherit;font-size:13px;font-weight:600;color:var(--wine-ink);background:transparent;border:1px solid var(--line);border-radius:8px;padding:5px 11px;cursor:pointer}
+.copy:hover{border-color:var(--wine)}
+
+details.src{font-size:14px;color:var(--muted)}
+details.src summary{cursor:pointer;width:max-content}
+details.src ul{margin:8px 0 0;padding-left:18px}
+details.src a{color:var(--ink-2)}
+
+/* status + footer */
+.status{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:48px}
+.status .s-ok{color:var(--opp)} .status .s-bad{color:var(--risk)} .status .s-part{color:var(--ops)}
+footer{font-size:13.5px;color:var(--muted);margin-top:14px;line-height:1.7}
+
+@media (max-width:640px){
+  .wrap{padding:0 16px 64px}
+  .hero{padding:36px 0 28px}
+  .today{padding:22px 20px 16px;border-radius:14px}
+  .issue{padding:24px 18px}
+  .duo{grid-template-columns:1fr}
+  .ov a{grid-template-columns:64px 1fr;gap:10px}
+  .sec-h p{flex-basis:100%}
+}
+@media (prefers-reduced-motion:no-preference){
+  .today{animation:rise .5s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script id="report-data" type="application/json">{"date": "2026-10-31", "generated_at": "2026-10-31T07:40:00+09:00", "headline": "라가르드 ECB 총재가 임기를 9개월 앞둔 2027년 2월 7일 조기 퇴임을 발표(금리는 2.5% 동결, 12월 인상 가능성 열어 둠)해 후임 경쟁과 프랑스 대선 연계 논쟁이 번지고, 우크라이나에서는 올레시키 국지 휴전 속 첫 인도주의 대피가 진행되는 한편 EU가 900억 유로 대출의 2027년분 450억 유로를 상반기에 앞당겨 집행하기로 함. VS 쪽에서는 EU 11개국이 겨울 디젤 부족 우려로 전략비축 2,050만 배럴 방출을 약속했고 호르무즈 해협 유조선 피격이 이어지며, 이탈리아 총파업으로 제노바·트리에스테 항만이 일부 막혔고, 10월 물가가 이탈리아 5.4%·프랑스 3.4%로 뛰고 프랑스 3분기 성장률은 -0.1%를 기록함.", "sources_status": [{"name": "Euronews", "url": "https://www.euronews.com/", "status": "partial", "note": "홈페이지는 WebFetch 시 '권한 요청 시간 초과(PROVENANCE_REQUIRED)'로 실패. 우회하지 않고, euronews.com 한정 WebSearch로 찾은 10/30 날짜별 목록(euronews.com/2026/10/30, 75건)과 개별 기사 10건(ECB·라가르드 2건, 우크라이나 지원·올레시키, 디젤 비축 방출, 호르무즈, 이탈리아 총파업, 10월 물가, 프랑스 성장률)을 직접 읽음. 목록 페이지에서 바로 연 기사 링크 일부는 같은 사유로 실패해 WebSearch로 URL을 다시 찾아 읽음."}, {"name": "eurotopics", "url": "https://www.eurotopics.net/en/", "status": "partial", "note": "홈페이지는 같은 사유로 실패. eurotopics.net 한정 WebSearch로 토론 목록(eurotopics.net/en/3/debates)을 찾아 읽었고(10/30자 신규: 라가르드 퇴임, 이스라엘 총선, 미국 중간선거, 보우소나루 도피), 라가르드 퇴임·올레시키 휴전 토론 2건을 직접 읽음."}], "items": [{"id": "ecb-lagarde-early-exit", "section": "top", "category": "통화정책/EU 기관", "title": "라가르드 ECB 총재, 2027년 2월 조기 퇴임 발표 — 금리 2.5% 동결 속 12월 인상 가능성 열어 둬, 후임은 크노트·에르난데스 데 코스 거론", "summary": "ECB는 10/29 예금금리를 2.5%로 동결했음(이란 전쟁발 에너지 가격 때문에 올해 두 차례 인상, 직전 인상은 9월). 9월 유로존 물가는 3.8%로 목표치(2%)의 거의 두 배. 같은 날 라가르드 총재는 임기(2027년 10월)를 약 9개월 앞둔 2027년 2월 7일 물러난다고 밝히며 '더 이상 중립을 지킬 수 없다'고 이유를 설명했고, 12월·2월 두 차례 회의를 더 주재함. 후임으로는 클라스 크노트(전 네덜란드 중앙은행 총재)와 파블로 에르난데스 데 코스(BIS 사무총장)가 유력하게 거론되며, 수석이코노미스트 레인을 포함해 집행이사회 6석 중 3석이 내년 상반기에 바뀜. eurotopics 논평에서 쥐트도이체 차이퉁은 2027년 4월 프랑스 대선 전에 후임을 정해 극우 대통령의 영향력을 막으려는 수라고 봤고, FAZ는 재정 위기를 겪는 프랑스 등의 부담을 중앙은행이 떠안아선 안 된다며 안정 지향 후임을 요구함. 시장에서는 12월 추가 인상이 여전히 '살아 있다'는 분석이 나오고, 프랑스 10년물 금리는 지난주 2002년 이후 처음 5%를 넘음.", "sources": [{"title": "eurotopics — Why is ECB President Lagarde stepping down? (10/30)", "url": "https://www.eurotopics.net/en/366466/why-is-ecb-president-lagarde-stepping-down"}, {"title": "Euronews — ECB holds rates at 2.5% as Lagarde announces early exit with inflation near double the target (10/29)", "url": "https://www.euronews.com/2026/10/29/ecb-holds-rates-at-25-as-lagarde-announces-early-exit-with-inflation-near-double-the-targe"}, {"title": "Euronews — 'I cannot remain neutral': Lagarde finally explains her early ECB exit (10/29, 10/30 갱신)", "url": "https://www.euronews.com/2026/10/29/i-cannot-remain-neutral-lagarde-finally-explains-her-early-ecb-exit"}], "hypothesis": {"products": ["유럽 신차 수요 전반 (할부·리스 금융 비용)", "인포테인먼트·ADAS 카메라·램프 (OEM 생산 물량 연동)", "유로화 결제 계약 (환율)"], "direction": "하방 리스크", "text": "ECB가 12월에 추가 인상하거나 고금리를 오래 유지하면 자동차 할부·리스 금리가 올라 유럽 소비자의 신차 구매가 늦춰질 수 있고, OEM이 생산 계획을 보수적으로 잡으면서 VS 제품 call-off가 forecast보다 줄어들 가능성. 또 후임 선정 과정의 불확실성과 프랑스 국채 금리 상승이 겹치면 유로 환율 변동성이 커져 유로 표시 계약의 수익성에 영향이 있을 수 있음."}, "caveat": "12월 금리 결정은 정해지지 않았고 ECB는 금리 경로를 미리 약속하지 않는다고 밝힘. 후임 인선 시점과 인물, 유로 환율 반응은 기사에 나오지 않았음. 금리가 실제 신차 수요에 얼마나 반영되는지는 확인되지 않았음.", "actions": ["주요 OEM 바이어에게 금리·금융 비용 상승이 딜러 주문·리스 판매 추이에 이미 나타나는지 확인", "2027년 상반기 forecast와 call-off 계획이 보수적으로 조정될 가능성이 있는지 문의", "재무팀과 유로 환율 변동성 확대에 대비한 헤지·가격 조정 조항 점검"], "buyer_question": "With the ECB keeping the door open to another rate hike, are you seeing any slowdown in financed or leased vehicle orders that could affect your H1 2027 call-offs?"}, {"id": "ukraine-oleshky-eu-funding", "section": "top", "category": "지정학/우크라이나", "title": "러 점령 올레시키서 6일 국지 휴전·첫 인도주의 대피 — EU는 우크라 지원 450억 유로 2027년 상반기로 앞당겨, 11월 아부다비 기술협상 논의", "summary": "러시아 점령지인 헤르손주 올레시키에서 멜라니아 트럼프가 관여해 성사된 6일간의 국지 휴전이 시작됐고, 10/29 대피로 지뢰 제거가 끝나 10/30 수년 만의 첫 인도주의 대피와 구호품 배분이 진행됨. eurotopics 논평에서 라트비아 TVNet은 휴전 감시 주체와 기간이 불분명하다고 지적했고, 이탈리아 아베니레는 '희망의 빛'이라면서도 대러 석유 제재 양보를 경계함. 야체뉵 전 우크라이나 총리는 Euronews 인터뷰에서 이번 휴전이 전면 휴전으로 이어지지 않을 것이라며 유럽이 한목소리를 내야 한다고 말함. 미국 주도의 기술급 협상이 11월 아부다비에서 열리는 방안이 논의 중. 한편 EU 집행위는 10/30 900억 유로 대출 중 2027년분 450억 유로(군사 317억·예산 133억)를 상반기에 집중 집행하겠다고 발표함. 전쟁 장기화, 흑해 봉쇄, 인프라 공격으로 우크라이나의 2027년 재정 공백은 700억 유로로 추산되며 EU는 최대 3분의 2를 부담할 계획.", "sources": [{"title": "eurotopics — Ukraine war: ceasefire in Oleshky (10/28)", "url": "https://www.eurotopics.net/en/366325/ukraine-war-ceasefire-in-oleshky"}, {"title": "Euronews — Oleshky ceasefire will not bring wider truce with Russia, former Ukrainian PM warns (10/30)", "url": "https://www.euronews.com/2026/10/30/oleshky-ceasefire-will-not-bring-wider-truce-with-russia-former-ukrainian-pm-warns"}, {"title": "Euronews — EU to fast-track €45 billion for Ukraine amid acute financial crunch (10/30)", "url": "https://www.euronews.com/2026/10/30/eu-to-fast-track-45-billion-for-ukraine-amid-acute-financial-crunch"}], "hypothesis": {"products": ["동유럽(폴란드·체코·슬로바키아·헝가리) OEM 공장 향 육상 물류", "에너지 가격 연동 원가 (유럽 생산 램프·e-파워트레인)"], "direction": "혼재", "text": "국지 휴전과 11월 협상 논의가 진전되면 장기적으로 에너지 가격과 동유럽 물류 리스크가 줄어들 여지가 있음(잠재 기회). 그러나 EU가 2027년 지원을 앞당기는 배경 자체가 전쟁 장기화 전제이고, 정유시설 공격이 이어지면서 디젤 시장이 계속 빠듯할 가능성이 있어, 단기적으로는 동유럽 운송비·에너지 원가 부담이 유지될 수 있음."}, "caveat": "휴전의 구체 조건·감시 주체·연장 여부는 공개되지 않았음. 아부다비 협상 개최는 '논의 중' 단계임. 이 이슈가 VS 수요에 주는 영향은 간접적이며 고객별 영향은 확인되지 않았음.", "actions": ["동유럽 고객 향 포워더에 겨울철 육상 운송 리드타임·유류할증 전망 확인", "동유럽 OEM 공장 바이어에게 에너지 비용 부담에 따른 교대 축소·생산 조정 계획이 있는지 문의"], "buyer_question": "Are higher energy costs or regional uncertainty leading to any planned shift reductions or production adjustments at your Central and Eastern European plants this winter?"}, {"id": "diesel-reserve-hormuz", "section": "vs", "category": "에너지/물류비", "title": "EU 11개국, 겨울 디젤 부족 우려에 전략비축 2,050만 배럴 방출 약속 — 브렌트 112달러, 호르무즈선 유조선 피격 잇따라", "summary": "독일·프랑스·이탈리아·벨기에·네덜란드 등 EU 11개국이 10/29 룩셈부르크 에너지장관 회의 계기에 2027년 1월 말까지 전략비축 디젤 2,050만 배럴을 풀기로 함. 중동 전쟁에 따른 걸프 정유시설 공격과 우크라이나의 러시아 정유시설 타격으로 디젤 시장이 빠듯해졌고, 미국의 압박도 작용함. 브렌트유는 10/20 배럴당 약 112달러(전쟁 전 약 40달러). 집행위는 실물 부족은 없을 것으로 보지만 시장이 '여전히 빠듯하다'고 평가했고, 전문가들은 비축 방출이 정제능력 부족을 메우지 못하는 단기 처방이라고 봄. 12/10 에너지장관들이 이행을 점검함. 같은 날 이란 혁명수비대는 호르무즈 해협 남쪽에서 유조선 2척이 불타 멈췄다고 주장했고, 오만 인근에서는 기뢰 부착 공격으로 유조선 기관실 화재가 발생함. 카타르 중재로 미·이란 협상이 이어지나, 미 중간선거(11/3) 이후 대규모 공습 가능성도 보도됨.", "sources": [{"title": "Euronews — EU countries pledge 20.5mn diesel barrels as winter supply fears grow (10/30)", "url": "https://www.euronews.com/2026/10/30/eu-countries-pledge-205mn-diesel-barrels-as-winter-supply-fears-grow"}, {"title": "Euronews — Iran's Revolutionary Guard reports tankers on fire in Strait of Hormuz as talks continue (10/30)", "url": "https://www.euronews.com/2026/10/30/irans-revolutionary-guard-reports-two-tankers-on-fire-in-strait-of-hormuz-as-talks-continu"}], "hypothesis": {"products": ["유럽 내 트럭 운송 전 제품 (유류할증·운임)", "아시아→유럽 해상 운송 (보험료·항로)", "램프 하우징 등 석유화학 소재 원가 (ZKW)"], "direction": "운영 리스크", "text": "디젤 수급이 겨울 내내 빠듯하고 호르무즈 사고가 이어지면 유럽 내 트럭 운임·유류할증과 해상 보험료가 더 오를 수 있어, 납품 물류비와 고객과의 비용 분담 협상이 쟁점이 될 가능성. 미·이란 협상이 타결되면 반대로 비용 압박이 완화될 수 있으나, 11/3 이후 군사 충돌이 재개되면 아시아발 부품 해상 운송의 리드타임이 다시 흔들릴 수 있음."}, "caveat": "기사에는 디젤 소매·도매 가격이 나오지 않았고, 비축 방출이 실제 가격을 얼마나 낮출지는 알 수 없음. 혁명수비대 주장 속 선박 신원과 원인도 확인되지 않았음. 미·이란 협상 결과는 미정.", "actions": ["포워더·운송사에 11~1월 유류할증(fuel surcharge)·해상 전쟁보험료 인상 계획과 아시아→유럽 리드타임 변동 확인", "OEM 바이어와 물류비 상승분 분담(인코텀즈·surcharge 조항) 협의 필요 여부 점검", "주요 고객 향 안전재고 수준이 해상 리드타임 변동을 감당할 수 있는지 확인"], "buyer_question": "Given the tight diesel market and ongoing Hormuz incidents, would you like us to raise safety stock for the coming months, and how should we treat additional freight and fuel surcharges?"}, {"id": "italy-general-strike-ports", "section": "vs", "category": "물류/파업", "title": "이탈리아 총파업 — 물가·재무장 반대 시위에 제노바·트리에스테 항만 일부 봉쇄, 로마선 충돌… 항만 노동자 20여 개국서 동조 파업", "summary": "기층 노조 USB가 주도한 총파업이 10/30 이탈리아 전역에서 열려 생활비 상승과 유럽 재무장에 항의함(구호 '모든 것을 멈춰라'). 대중교통은 부분 운행에 그쳤고, 제노바 항만 노동자들은 이른 아침 타이어와 연막탄으로 항구 일부를 막으며 전쟁 관련 화물 작업 거부를 촉구했고, 트리에스테 항 입구에도 수백 명이 모임. 기사에 따르면 항만 노동자들은 약 20개국에서도 파업에 동참함. 로마에서는 콜로세움 인근에서 일부 시위대가 경찰과 충돌해 8명이 연행됐고, 밀라노에서는 동부 순환도로 봉쇄 시도가 우려됨. 당국은 주말까지 불안이 이어질 수 있다고 봄. 같은 날 발표된 이탈리아 10월 물가는 5.4%로 급등함.", "sources": [{"title": "Euronews — Protesters clash with police near Colosseum as Italy stages nationwide strike (10/30)", "url": "https://www.euronews.com/2026/10/30/italy-on-high-alert-as-thousands-take-the-streets-in-nationwide-strike"}], "hypothesis": {"products": ["이탈리아 항만(제노바·트리에스테) 경유 수입 부품", "이탈리아 OEM·Tier-1 공장 향 납품 (육상 운송)"], "direction": "운영 리스크", "text": "항만 봉쇄와 동조 파업이 반복되면 제노바·트리에스테 경유 해상 화물의 하역·통관이 며칠씩 밀려 이탈리아·중유럽 고객 향 납품 일정이 흔들릴 수 있음. 물가 급등으로 노동 쟁의가 이어지면 고객사 공장 가동에도 간헐적 차질이 생길 가능성. 다만 이번 파업은 하루 행동으로, 실제 화물 지연 규모는 아직 드러나지 않았음."}, "caveat": "기사는 철도·물류·공장 가동 영향을 다루지 않았고, 추가 파업 일정도 발표되지 않았음. 동조 파업한 20여 개국이 어디인지, 컨테이너 터미널 운영이 실제로 멈췄는지 확인되지 않았음.", "actions": ["포워더에 제노바·트리에스테 등 이탈리아 항만의 하역 지연·적체 여부와 추가 파업 예고 확인", "이탈리아 고객 바이어에게 10/30 파업으로 입고·생산 차질이 있었는지, 다음 주 call-off 변경이 필요한지 문의"], "buyer_question": "Did the 30 October general strike cause any disruption to inbound deliveries or production at your Italian sites, and do you need us to adjust next week's deliveries?"}, {"id": "october-inflation-france-stall", "section": "vs", "category": "거시/소비 수요", "title": "10월 물가 이탈리아 5.4%·프랑스 3.4%로 급등, 에너지가 주도 — 프랑스 3분기 성장률 -0.1%로 사실상 제자리, 예산 교착까지", "summary": "10월 속보치에서 이탈리아 물가는 5.4%(9월 4.2%, 에너지 31.4%↑, 규제 에너지 요금 59.5%↑)로 예상을 크게 웃돌았고, 프랑스는 3.4%로 2024년 1월 이후 최고, 스페인은 4.9%로 유지됨. 독일은 10/1부터 연말까지 시행되는 연료세 인하 덕에 2.8%로 내려옴. 판테온은 에너지 충격이 이탈리아 소비를 소매 통계보다 더 짓누르고 있다고 분석함. 프랑스는 3분기 GDP가 0.1% 줄어 올해 내내 성장이 없었고, 정부가 2027년 예산안을 통과시킬 의회 과반이 없어 불확실성이 커짐. 경제학자들은 이런 불확실성이 기업 투자를 미루게 할 수 있다고 경고하며, 프랑스 10년물 금리는 4.9%, 독일과의 스프레드는 약 1.55%p.", "sources": [{"title": "Euronews — Germany, France, Italy and Spain: Where was inflation highest in October? (10/30)", "url": "https://www.euronews.com/2026/10/30/germany-france-italy-and-spain-where-was-inflation-highest-in-october"}, {"title": "Euronews — French economy stalls as budget deadlock fuels concerns over public finances (10/30)", "url": "https://www.euronews.com/2026/10/30/french-economy-stalls-as-budget-deadlock-fuels-concerns-over-public-finances"}], "hypothesis": {"products": ["프랑스·이탈리아 OEM(스텔란티스·르노 등) 향 인포테인먼트·ADAS 카메라·램프", "e-파워트레인 (전기차 구매 여력·보조금 정책)"], "direction": "하방 리스크", "text": "에너지 요금이 가계 소득을 잠식하고 프랑스 경기가 정체되면 이탈리아·프랑스 시장의 신차 수요, 특히 고가 옵션(대화면 인포테인먼트·고급 램프)과 전기차 구매가 늦춰질 가능성. 프랑스 예산 교착이 길어지면 전기차 보조금 등 지원책 일정도 불투명해질 수 있음. 반면 독일은 연료세 인하로 단기 소비 부담이 덜해 국가별로 수요 흐름이 엇갈릴 수 있음."}, "caveat": "기사는 자동차 판매나 소비 지출 수치를 다루지 않았음. 물가가 실제로 신차 주문·옵션 선택에 반영됐는지, 프랑스 예산안에 전기차 지원이 어떻게 담길지는 확인되지 않았음. 유로존 전체 물가 속보치는 다음 주 발표 예정.", "actions": ["프랑스·이탈리아 OEM 바이어에게 최근 딜러 주문·판매 추이와 트림·옵션 믹스 변화(고사양 인포테인먼트·램프 채택률) 확인", "2027년 예산·전기차 보조금 불확실성이 프로그램 물량이나 SOP 일정에 반영되는지 문의", "프랑스·이탈리아 향 완제품·반제품 재고 수준을 점검해 call-off 감소 시 과잉 재고 위험 확인"], "buyer_question": "With inflation rising in France and Italy, are you seeing any change in dealer orders or in the take rate of higher-spec infotainment and lighting options that we should reflect in our forecast?"}], "today_actions": ["ECB 조기 퇴임·금리 — 주요 OEM에 할부·리스 판매 둔화 여부와 2027년 상반기 forecast·call-off 조정 가능성 확인, 재무팀과 유로 환율 헤지 점검", "우크라이나 휴전·EU 지원 — 동유럽 향 포워더에 겨울 운송 리드타임·유류할증 확인, 동유럽 OEM 공장의 교대 축소·생산 조정 계획 문의", "디젤 비축 방출·호르무즈 — 운송사에 11~1월 유류할증·전쟁보험료와 해상 리드타임 확인, 고객과 surcharge 분담·안전재고 수준 협의", "이탈리아 총파업 — 제노바·트리에스테 항만 적체와 추가 파업 예고 확인, 이탈리아 고객의 입고 차질·다음 주 call-off 변경 여부 문의", "10월 물가·프랑스 성장 정체 — 프·이 OEM에 딜러 주문과 고사양 옵션 채택률 추이, 보조금 불확실성에 따른 물량·SOP 영향 확인"]}</script>
+<script id="archive-data" type="application/json">["2026-10-31", "2026-10-30", "2026-10-29", "2026-10-28", "2026-10-27", "2026-10-26", "2026-10-25", "2026-10-24", "2026-10-23", "2026-10-22", "2026-10-21"]</script>
+<script>
+const d = JSON.parse(document.getElementById('report-data').textContent);
+const archive = JSON.parse(document.getElementById('archive-data').textContent);
+const base = '../';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dirClass = t => /하방|리스크 ?상승|위험/.test(t) && !/운영/.test(t) ? 'd-risk' : /운영/.test(t) ? 'd-ops' : /기회|상방/.test(t) ? 'd-opp' : 'd-mix';
+const statusMap = {ok:['수집 완료','s-ok'], partial:['일부 수집','s-part'], blocked:['접근 차단','s-bad'], error:['수집 실패','s-bad']};
+const days = ['일','월','화','수','목','금','토'];
+const dt = new Date(d.date + 'T00:00:00');
+const dateLabel = `${dt.getMonth()+1}월 ${dt.getDate()}일 ${days[dt.getDay()]}요일`;
+const key = 'eu-brief-checked-' + d.date;
+let checked = [];
+try { checked = JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) {}
+
+const topItems = d.items.filter(i => i.section === 'top');
+const vsItems = d.items.filter(i => i.section === 'vs');
+
+const issue = it => `
+<article class="issue" id="${esc(it.id)}">
+  <div class="tags"><span class="tag ${dirClass(it.hypothesis.direction)}">${esc(it.hypothesis.direction)}</span><span class="tag cat">${esc(it.category)}</span></div>
+  <h3>${esc(it.title)}</h3>
+  <p class="sum">${esc(it.summary)}</p>
+  <div class="duo">
+    <div class="pane hyp"><h4>VS 제품 영향 가설</h4><p>${esc(it.hypothesis.text)}</p>
+      <div class="prods">${it.hypothesis.products.map(p=>`<span>${esc(p)}</span>`).join('')}</div></div>
+    <div class="pane act"><h4>바이어에게 확인할 것</h4><ul>${it.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div>
+  </div>
+  <div class="caveat"><b>미확인</b><span>${esc(it.caveat)}</span></div>
+  <div class="ask"><div class="lbl"><span>바이어 질문 예시</span><button class="copy" type="button">복사</button></div><q>${esc(it.buyer_question)}</q></div>
+  <details class="src"><summary>출처 ${it.sources.length}건</summary><ul>${it.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></details>
+</article>`;
+
+document.getElementById('app').innerHTML = `
+<div class="bar">
+  <strong>EU 데일리 브리프 <span>/</span> VS 유럽영업</strong>
+  <label>지난 리포트 <select id="arch" aria-label="지난 리포트">${archive.map(a=>`<option value="${base}archive/${a}.html" ${a===d.date?'selected':''}>${a}</option>`).join('')}</select></label>
+</div>
+<header class="hero">
+  <p class="day">${esc(d.date)}</p>
+  <h1>${dateLabel}의 유럽</h1>
+  <p class="lead">${esc(d.headline)}</p>
+</header>
+<section class="today" aria-labelledby="today-h">
+  <h2 id="today-h">오늘 바이어에게 확인할 것</h2>
+  <p class="sub">뉴스는 가설입니다. 판매 추이·재고·발주 데이터로 확인하세요.</p>
+  <ul>${d.today_actions.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${checked.includes(i)?'checked':''}><span>${esc(t)}</span></label></li>`).join('')}</ul>
+  <div class="count" id="count"></div>
+</section>
+<section class="overview">
+  <div class="sec-h"><h2>오늘의 5가지</h2><p>대형 이슈 ${topItems.length} · VS 연관 ${vsItems.length}</p></div>
+  <ol class="ov">${d.items.map(i=>`<li><a href="#${esc(i.id)}"><span class="k ${i.section==='top'?'top':''}">${i.section==='top'?'대형 이슈':'VS 연관'}</span><span class="t">${esc(i.title)}</span></a></li>`).join('')}</ol>
+</section>
+<section class="group top">
+  <div class="sec-h"><h2>오늘의 가장 큰 이슈</h2><p>유럽 전체를 움직인 뉴스</p></div>
+  ${topItems.map(issue).join('')}
+</section>
+<section class="group">
+  <div class="sec-h"><h2>VS본부 연관 이슈</h2><p>전장 사업과 직접 닿는 뉴스</p></div>
+  ${vsItems.map(issue).join('')}
+</section>
+<div class="status">${d.sources_status.map(s=>{const [l,c]=statusMap[s.status]||[s.status,''];return `<span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> <span class="${c}">${esc(l)}</span></span>`}).join('')}</div>
+<footer>뉴스 기반 가설이며 수요 변화를 확정하지 않습니다. 생성 ${esc(d.generated_at)}</footer>`;
+
+document.getElementById('arch').addEventListener('change', e => { if (e.target.value) location.href = e.target.value; });
+const boxes = [...document.querySelectorAll('.today input')];
+const updateCount = () => { const n = boxes.filter(b=>b.checked).length; document.getElementById('count').textContent = `${n} / ${boxes.length} 확인 완료`; };
+boxes.forEach(b => b.addEventListener('change', () => {
+  const sel = boxes.filter(x=>x.checked).map(x=>+x.dataset.i);
+  try { localStorage.setItem(key, JSON.stringify(sel)); } catch(e) {}
+  updateCount();
+}));
+updateCount();
+document.querySelectorAll('.copy').forEach(btn => btn.addEventListener('click', async () => {
+  const text = btn.closest('.ask').querySelector('q').textContent;
+  try { await navigator.clipboard.writeText(text); btn.textContent = '복사됨'; } catch(e) { btn.textContent = '복사 실패'; }
+  setTimeout(() => btn.textContent = '복사', 1600);
+}));
+</script>
+</body>
+</html>
