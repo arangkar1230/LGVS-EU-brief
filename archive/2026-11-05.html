@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU 데일리 브리프 — 2026-11-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#FBFBF9; --surface:#FFFFFF; --ink:#16213A; --ink-2:#3A4458; --muted:#5A6475; --line:#E4E6EB;
+  --wine:#A50034; --wine-ink:#7E0028; --wine-tint:#F6E8ED; --on-wine:#FFFFFF;
+  --risk:#B3261E; --risk-bg:#FBEAE8; --ops:#8A5A00; --ops-bg:#FBF1DE; --mix:#3D4F6B; --mix-bg:#E8EDF4; --opp:#1F6B4A; --opp-bg:#E3F2EA;
+  --serif:"Noto Serif KR", serif; --sans:"Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#10141D;--surface:#171C27;--ink:#EEF0F4;--ink-2:#C9CED8;--muted:#98A1B2;--line:#283041;
+  --wine:#E0507A;--wine-ink:#F28AA8;--wine-tint:#2A1A22;--on-wine:#FFFFFF;
+  --risk:#FF8A80;--risk-bg:#3A1F1E;--ops:#F2C066;--ops-bg:#33290F;--mix:#A9BCD9;--mix-bg:#1F2838;--opp:#7FD6A9;--opp-bg:#15302A}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.bar strong{color:var(--ink);font-weight:600}
+.bar strong span{color:var(--wine)}
+.bar select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+
+/* hero */
+.hero{padding:48px 0 36px}
+.hero .day{font-size:15px;color:var(--muted);margin:0 0 6px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7vw,48px);line-height:1.2;letter-spacing:-.01em;margin:0 0 22px}
+.hero .lead{font-family:var(--serif);font-weight:500;font-size:clamp(19px,3.4vw,22px);line-height:1.7;color:var(--ink-2);margin:0;padding-left:18px;border-left:3px solid var(--wine)}
+
+/* today checklist — the one loud element */
+.today{background:var(--wine);color:var(--on-wine);border-radius:18px;padding:28px 28px 22px;margin:8px 0 56px}
+.today h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0 0 4px}
+.today .sub{font-size:14px;opacity:.85;margin:0 0 16px}
+.today ul{list-style:none;margin:0;padding:0}
+.today li{border-top:1px solid rgba(255,255,255,.22)}
+.today label{display:flex;gap:14px;align-items:flex-start;padding:13px 0;cursor:pointer;font-size:17px;font-weight:500;line-height:1.6}
+.today input{appearance:none;flex:none;width:22px;height:22px;margin-top:2px;border:2px solid rgba(255,255,255,.8);border-radius:6px;cursor:pointer;display:grid;place-content:center}
+.today input:checked{background:#fff}
+.today input:checked::after{content:"";width:10px;height:6px;border:solid var(--wine);border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translate(1px,-1px)}
+.today input:checked + span{text-decoration:line-through;opacity:.6}
+.today .count{font-size:13px;opacity:.85;margin-top:10px}
+
+/* overview */
+.overview{margin:0 0 56px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 18px}
+.sec-h h2{white-space:nowrap}
+.sec-h h2{font-family:var(--serif);font-size:24px;font-weight:700;margin:0}
+.sec-h p{margin:0;color:var(--muted);font-size:14px}
+.ov{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ov li{border-bottom:1px solid var(--line)}
+.ov a{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;text-decoration:none;align-items:baseline}
+.ov a:hover .t{color:var(--wine)}
+.ov .k{font-size:13px;font-weight:600;color:var(--muted)}
+.ov .k.top{color:var(--wine)}
+.ov .t{font-weight:600;font-size:16.5px;line-height:1.55}
+
+/* issue */
+.group{margin:0 0 40px}
+.issue{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px 28px;margin:0 0 20px}
+.group.top .issue{box-shadow:inset 0 4px 0 var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.tag{font-size:13px;font-weight:600;line-height:1;padding:7px 10px;border-radius:999px;white-space:nowrap;background:var(--mix-bg);color:var(--mix)}
+.tag.cat{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:500}
+.d-risk{background:var(--risk-bg);color:var(--risk)} .d-ops{background:var(--ops-bg);color:var(--ops)}
+.d-mix{background:var(--mix-bg);color:var(--mix)} .d-opp{background:var(--opp-bg);color:var(--opp)}
+.issue h3{font-family:var(--serif);font-weight:700;font-size:clamp(21px,4vw,25px);line-height:1.45;margin:0 0 12px;letter-spacing:-.005em}
+.issue .sum{color:var(--ink-2);margin:0 0 24px}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 16px}
+.pane{border-radius:12px;padding:18px 18px 16px}
+.pane h4{margin:0 0 8px;font-size:14px;font-weight:700}
+.hyp{background:var(--mix-bg)} .hyp h4{color:var(--mix)}
+.act{background:var(--wine-tint)} .act h4{color:var(--wine-ink)}
+.pane p,.pane ul{margin:0;font-size:15.5px;line-height:1.7}
+.pane ul{padding-left:18px}.pane li+li{margin-top:6px}
+.prods{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 0}
+.prods span{font-size:12.5px;padding:3px 8px;border-radius:6px;background:var(--surface);color:var(--ink-2);border:1px solid var(--line)}
+
+.caveat{display:flex;gap:10px;font-size:15px;color:var(--ink-2);padding:12px 14px;border:1px dashed var(--line);border-radius:10px;margin:0 0 16px}
+.caveat b{flex:none;color:var(--ops);font-weight:700}
+
+.ask{border-left:3px solid var(--wine);padding:4px 0 4px 16px;margin:0 0 18px}
+.ask .lbl{font-size:13px;color:var(--muted);margin:0 0 4px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ask q{display:block;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:17px;line-height:1.6;quotes:none}
+.copy{font:inherit;font-size:13px;font-weight:600;color:var(--wine-ink);background:transparent;border:1px solid var(--line);border-radius:8px;padding:5px 11px;cursor:pointer}
+.copy:hover{border-color:var(--wine)}
+
+details.src{font-size:14px;color:var(--muted)}
+details.src summary{cursor:pointer;width:max-content}
+details.src ul{margin:8px 0 0;padding-left:18px}
+details.src a{color:var(--ink-2)}
+
+/* status + footer */
+.status{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:48px}
+.status .s-ok{color:var(--opp)} .status .s-bad{color:var(--risk)} .status .s-part{color:var(--ops)}
+footer{font-size:13.5px;color:var(--muted);margin-top:14px;line-height:1.7}
+
+@media (max-width:640px){
+  .wrap{padding:0 16px 64px}
+  .hero{padding:36px 0 28px}
+  .today{padding:22px 20px 16px;border-radius:14px}
+  .issue{padding:24px 18px}
+  .duo{grid-template-columns:1fr}
+  .ov a{grid-template-columns:64px 1fr;gap:10px}
+  .sec-h p{flex-basis:100%}
+}
+@media (prefers-reduced-motion:no-preference){
+  .today{animation:rise .5s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script id="report-data" type="application/json">{"date": "2026-11-05", "generated_at": "2026-11-05T07:50:00+09:00", "headline": "미국 중간선거에서 민주당이 상·하원을 모두 가져가며 유럽 언론은 '트럼프 심판'으로 해석했고, 슈퍼마켓 냉장 설비 공격에 이어 프랑스 혈액원·은행까지 사이버공격이 이어지며 유럽의 연결 인프라 취약성 논쟁이 커짐. VS 쪽에서는 유럽의회 환경위의 2035년 승용차 CO2 감축 목표 87.5% 완화안 통과, BMW의 2026년 자동차 부문 마진 전망 대폭 하향(구세대 Gen5 전기차 조기 단종 포함), 에너지발 유로존 물가 4%와 ECB 12월 추가 인상 관측을 주목함.", "sources_status": [{"name": "Euronews", "url": "https://www.euronews.com/", "status": "partial", "note": "홈페이지와 /business 섹션은 WebFetch 시 '권한 요청 시간 초과(PROVENANCE_REQUIRED)'로 실패해 우회하지 않음. 11/4 날짜 아카이브(https://www.euronews.com/2026/11/04)와 기사 3건(CO2 목표 완화, 중간선거 라이브, 유로존 물가)은 직접 읽음. BMW 실적, '트럼프 패배가 유럽·시장에 주는 의미', 프랑스 혈액원 사이버공격 기사는 같은 오류로 열리지 않아 BMW는 회사 보도자료 등 사실 확인용 출처로 대신함."}, {"name": "eurotopics", "url": "https://www.eurotopics.net/en/", "status": "partial", "note": "홈페이지는 같은 사유(PROVENANCE_REQUIRED)로 실패. eurotopics.net 한정 WebSearch로 찾은 11/4자 토론 3건(미국 중간선거, 슈퍼마켓 사이버공격, 스페인 교통장관 사임)을 직접 읽음. 자동차·통상 관련 신규 토론은 찾지 못함."}], "items": [{"id": "us-midterms-democrats-win-congress", "section": "top", "category": "국제정치/미국", "title": "미국 중간선거 민주당 상·하원 장악 — 유럽 언론 '트럼프 심판', 관세·대러 정책 견제 기대와 '레임덕 트럼프가 더 위험할 수도' 경계 공존", "summary": "11/4 개표 결과 민주당이 하원(작성 시점 435석 중 220석 확보, 과반 218석)과 상원을 모두 가져가는 것으로 집계됨. 텍사스·미시간·오하이오 등에서 민주당 후보가 이겼고, 트럼프 대통령은 결과를 받아들이겠다고 밝힘. 결과 발표 뒤 미국 국채 금리와 달러가 내리고 유럽 증시가 오름(유로 약 1.126달러). eurotopics에 모인 유럽 언론 가운데 네덜란드 NRC는 투표율 탓으로 돌릴 수 없는 민주당의 '쓰나미'로, 영국 Spectator는 관세·물가·재정적자·대러 태도에 대한 거부로 평가함. 체코 Novinky.cz와 슬로베니아 Delo는 MAGA 운동의 동력 약화를, 이탈리아 La Repubblica는 결과 수용 약속이 지켜질지를 물었고, 프랑스 France Inter는 민주당 의회가 트럼프 측근 조사와 대러 접근 차단에 나설 수 있다고 봄. Euronews는 약해진 트럼프가 오히려 유럽에 더 큰 위협이 될 수 있다는 분석도 함께 실음.", "sources": [{"title": "Euronews — US midterm elections: Democrats take control of US Congress in rejection of Trump (11/4 라이브)", "url": "https://www.euronews.com/2026/11/04/live-updates-on-the-2026-midterm-elections-in-the-us"}, {"title": "eurotopics — US midterm elections: voters punish Trump (11/4 언론 리뷰)", "url": "https://www.eurotopics.net/en/366685/us-midterm-elections-voters-punish-trump"}, {"title": "Euronews — Eurozone inflation hits 4% (시장 반응 부분, 11/4)", "url": "https://www.euronews.com/2026/11/04/eurozone-inflation-hits-4-which-countries-saw-prices-jump-the-most"}], "hypothesis": {"products": ["미국 수출 비중이 큰 유럽 OEM 차종 (인포테인먼트·ADAS 카메라·ZKW 램프)", "유럽 OEM의 미국 현지 생산 프로그램 (신규 RFQ)", "e-파워트레인 (미국 전기차 정책 방향)"], "direction": "혼재", "text": "어제 브리프의 가설을 결과 기준으로 갱신함. 관세가 행정명령 중심이라 즉시 바뀌진 않겠지만, 의회의 견제가 커지면 유럽 OEM이 미국 현지화 투자(관세 완화와 연계된 공장 계획)를 서두를 유인이 약해져 관련 RFQ 일정이 늦어질 수 있음. 반대로 관세 완화 기대가 커지면 유럽 생산·미국 수출 차종의 물량이 유지될 가능성도 있음. 달러 약세(유로 강세)는 유럽산 차량의 미국 판매 가격 경쟁력을 낮춰 미국 수출 차종 물량에 부담이 될 수 있음."}, "caveat": "관세 정책이 실제로 바뀐다는 발표는 없음. 새 의회는 내년 1월 출범하며, 유럽 OEM이 미국 현지화 계획을 바꿨다는 보도도 없음. 환율 효과의 크기는 확인하지 않았음. '트럼프 패배가 유럽·시장에 주는 의미' Euronews 기사는 열리지 않았음.", "actions": ["미국 수출 비중이 큰 OEM 바이어에게 선거 결과·환율 변화를 반영해 2027년 미국 수출 차종 forecast를 재검토하는지 확인", "미국 현지 생산을 검토하던 고객에게 해당 프로그램의 RFQ 일정·현지 조달 요건이 바뀌는지 문의"], "buyer_question": "Now that the US midterm results are in, are you revisiting either your 2027 volumes for US-bound models or the timeline for any US localisation sourcing?"}, {"id": "europe-cyberattack-wave-connected-devices", "section": "top", "category": "사이버보안/인프라", "title": "슈퍼마켓 냉장 설비 공격 이어 프랑스 혈액원·은행도 사이버공격 — 유럽 언론 '인터넷 연결 기기 전반이 표적, 내일은 자동차일 수도'", "summary": "해커가 슈퍼마켓 관제 시스템에 침입해 냉장·냉동 온도를 올리는 공격이 독일·벨기에·스웨덴·아일랜드·룩셈부르크·에스토니아·핀란드·네덜란드 등으로 번졌고, 11/4에는 이탈리아 시칠리아의 쿱 매장 피해 보도가 이어짐. 같은 날 Euronews는 프랑스 혈액원(시료 피해는 없다고 당국 발표)과 프랑스 은행 Crédit Mutuel Arkéa(고객 손실 없다고 발표)의 사이버공격 피해도 보도함. eurotopics에 실린 언론 중 에스토니아 Delfi는 자국에만 취약한 연결 기기가 약 3만 대라며 오늘은 냉장고, 내일은 히트펌프·태양광·자동차일 수 있다고 경고함. 그리스 Naftemporiki는 항공기 폭탄 위협과 함께 새로운 불안의 단계라고 했고, 핀란드 Ilta-Sanomat는 내년 유럽 선거를 앞둔 불안 조성 목적을 의심했으며, 아일랜드 Irish Times는 AI로 취약점 탐색이 빨라지는 만큼 공격 성공 이후까지 대비하라고 주문함. 공격 주체는 아직 밝혀지지 않았음.", "sources": [{"title": "eurotopics — Supermarket cyberattacks set off alarm bells across Europe (11/4 언론 리뷰)", "url": "https://www.eurotopics.net/en/366612/supermarket-cyberattacks-set-off-alarm-bells-across-europe"}, {"title": "Euronews — 11/4 기사 목록(이탈리아 쿱 피해, 프랑스 혈액원·Crédit Mutuel Arkéa 사이버공격 제목 확인)", "url": "https://www.euronews.com/2026/11/04"}], "hypothesis": {"products": ["텔레매틱스 모듈·커넥티드 인포테인먼트 (차량 사이버보안)", "고객 공장·VS 유럽 창고의 원격관리 설비 (OT 보안)", "공급사 사이버보안 심사·납품 연속성 요구"], "direction": "운영 리스크", "text": "공격이 식품 유통에서 의료·금융으로 넓어지며 '연결 기기 전반'이 문제로 다뤄지기 시작함. 유럽 OEM이 커넥티드카 관련 사이버보안 점검(취약점 대응, 원격 업데이트 체계 등)을 공급사에 추가로 요구하거나 기존 요건 적용을 앞당길 가능성이 있음. 이는 단기적으로 텔레매틱스·인포테인먼트 프로그램의 검증 부담과 일정 리스크가 될 수 있지만, 보안 대응 역량이 RFQ 평가에서 차별화 요소가 될 여지도 있음."}, "caveat": "자동차나 자동차 공장이 공격받았다는 보도는 없음. 차량을 언급한 것은 에스토니아 매체의 전망일 뿐임. 프랑스 혈액원 기사는 본문이 열리지 않아 제목만 확인했음. OEM이 공급사 요건을 바꾼다는 발표는 확인되지 않았음.", "actions": ["주요 OEM의 커넥티드카 사이버보안 담당(또는 구매)에게 최근 사건 이후 공급사 대상 추가 점검·문서 요청 계획이 있는지 확인", "VS 유럽 창고·물류 거점의 원격관리 설비가 외부망에 직접 노출되지 않았는지 내부 IT 점검 결과를 확인"], "buyer_question": "In light of the recent cyberattacks on connected equipment in Europe, are you planning any additional cybersecurity checks or documentation requests for telematics and infotainment suppliers?"}, {"id": "ep-committee-co2-2035-target-87-5", "section": "vs", "category": "EU 자동차 규제", "title": "유럽의회 환경위, 2035년 신차 CO2 감축 목표 100%→87.5% 완화안 지지 — 저탄소 철강 크레딧 7.5%, 밴은 80%", "summary": "유럽의회 환경위원회가 11/4 2035년 승용차 CO2 감축 목표를 100%에서 87.5%로 낮추는 타협안을 지지함. 집행위가 2025년 12월 제안한 90%보다 더 완화된 것으로, EU산 저탄소 철강을 쓰는 제조사에 7.5%의 크레딧을 주는 방안이 더해졌고 밴 목표는 90%에서 80%로 낮아짐. EPP·S&D·Renew가 타협안을 만들었고 교통·산업위원회는 10/22 비슷한 안을 통과시켰음. EPP 측은 2035년 이후에도 주행거리 연장형(EREV)·장거리 플러그인 하이브리드가 역할을 할 수 있는 '기술 중립'이라고 했고, 녹색당은 산업에도 나쁜 합의이며 그린딜 합의를 깬다고 비판함. 본회의 표결과 회원국과의 협상이 남아 있음. 브뤼겔은 EU 자동차 생산이 2019년보다 약 19~20% 적다고 봄.", "sources": [{"title": "Euronews — MEPs deal another blow to Green Deal with softer car emissions targets (11/4)", "url": "https://www.euronews.com/2026/11/04/meps-deal-another-blow-to-green-deal-with-softer-car-emissions-targets"}], "hypothesis": {"products": ["e-파워트레인 (LG마그나, 순수 전기차 프로그램)", "하이브리드·EREV 차종용 인포테인먼트·ZKW 램프·ADAS 카메라", "2030년대 플랫폼 RFQ의 파워트레인 구성"], "direction": "혼재", "text": "2035년 이후에도 하이브리드·EREV 판매 여지가 생기면 OEM이 순수 전기차 전용 플랫폼 일부의 SOP를 늦추거나 물량 가정을 낮출 수 있어, e-파워트레인 수요에는 하방 리스크가 될 수 있음. 반면 내연기관·하이브리드 차종의 수명 연장이나 파생 모델 추가는 인포테인먼트·램프·ADAS 카메라처럼 파워트레인과 무관한 품목의 물량 유지로 이어질 수 있음. OEM이 RFQ에서 전동화 비율 시나리오를 여러 개로 요구할 가능성도 있음."}, "caveat": "위원회 단계 표결로, 본회의와 회원국 협상(트릴로그)에서 수치가 바뀔 수 있음. 개별 OEM이 이를 근거로 생산 계획을 바꿨다는 보도는 없음. 저탄소 철강 크레딧의 세부 산정 방식은 기사에 나오지 않았음.", "actions": ["e-파워트레인 고객에게 규제 완화 논의가 진행 중인 BEV 프로그램의 SOP·연간 물량 가정에 반영되고 있는지 확인", "하이브리드·EREV 차종을 공급 중이거나 수주 예정인 OEM에 해당 차종의 생산 기간 연장 또는 파생 모델 계획 여부와 관련 RFQ 일정 문의"], "buyer_question": "With the Parliament committee backing an 87.5% 2035 CO2 target, are you adjusting the powertrain mix or SOP timing assumptions in your upcoming platform programmes?"}, {"id": "bmw-q3-margin-guidance-cut", "section": "vs", "category": "OEM 실적/생산 계획", "title": "BMW, 2026년 자동차 부문 EBIT 마진 전망 1~3%→-0.5~+0.5%로 하향 — Gen5 배터리 기반 구형 모델 조기 단종·관리직 감축 가속, 중국 판매 4분의 1 감소", "summary": "BMW그룹이 11/4 3분기 실적을 발표하며 2026년 자동차 부문 EBIT 마진 전망을 기존 1~3%에서 -0.5~+0.5%로 낮춤(구조조정 전 영업 마진은 2% 이상 유지). 노이어 클라세 신차 수요가 강하고 생산이 늘어나면서 Gen5 배터리 기반 일부 모델 등 이전 세대 차종을 예정보다 일찍 단종하기로 해 4분기에 일회성 비용이 생긴다고 설명함. 관리직 감축도 발표보다 빨리 진행함. 3분기 자동차 부문 EBIT은 9억100만 유로(-39.7%), 마진 3.4%이고 관세가 약 1.25%p를 깎았음. 3분기 인도량은 약 55만 대(-6.3%)로 중국 판매가 시장과 함께 약 4분의 1 줄었고, 유럽(+2.6%)과 미국(+2.5%)은 늘었음. 순수 전기차 비중은 약 20%, 유럽에서는 약 35%임.", "sources": [{"title": "BMW Group 보도자료 — BMW Group accelerates realignment (11/4) (사실 확인용)", "url": "https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/downloads/en/2026/q3/Press_release_BMW_Group_accelerates_realignment.pdf"}, {"title": "RTTNews — BMW Group Q3 profit, deliveries drop; cuts FY26 automotive segment EBIT margin (11/4) (사실 확인용)", "url": "https://www.rttnews.com/3709236/bmw-group-q3-profit-deliveries-drop-cuts-fy26-automotive-segment-ebit-margin.aspx"}], "hypothesis": {"products": ["BMW 구세대(Gen5 배터리 기반) 차종 공급 부품 — 인포테인먼트·ADAS 카메라·ZKW 램프", "노이어 클라세 신규 프로그램 (램프업 물량)", "e-파워트레인 (세대 전환)"], "direction": "혼재", "text": "구세대 차종 조기 단종이 확정되면 해당 차종에 들어가는 부품은 EOP가 앞당겨져 남은 기간 call-off가 줄고, 단종 부품 재고·서비스 부품(last-time-buy) 처리 문제가 생길 수 있음. 반대로 노이어 클라세 램프업이 빨라지면 신규 차종 부품 call-off가 예상보다 늘 수 있음. 마진 압박이 커진 OEM은 공급사에 가격 인하나 비용 분담을 더 강하게 요구할 가능성이 있음."}, "caveat": "BMW는 조기 단종할 차종명을 밝히지 않았고, 시점·물량도 공개하지 않았음. VS 공급 차종이 포함되는지는 확인되지 않았음. Euronews 기사는 열리지 않아 회사 보도자료와 통신 기사(사실 확인용)로 대신함.", "actions": ["BMW 바이어에게 조기 단종 대상 차종과 EOP 변경 일정, 이에 따른 12월 이후 call-off 조정 계획 확인", "단종 차종 공급 부품의 재고·재공품 처리와 서비스 부품 last-time-buy 조건을 미리 협의", "노이어 클라세 공급 품목이 있다면 램프업 상향에 따른 forecast·생산능력 요청 여부 확인"], "buyer_question": "Following your decision to phase out some previous-generation models earlier, could you confirm whether any programmes we supply are affected and share the revised EOP dates and call-off plan?"}, {"id": "eurozone-inflation-4pct-ecb", "section": "vs", "category": "거시경제/에너지", "title": "유로존 10월 물가 4%로 3년여 만에 최고 — 에너지 20.8% 급등, 이탈리아 5.6%·독일은 유류세 인하로 2.8%, ECB 12월 추가 인상 관측", "summary": "유로스타트 속보치 기준 유로존 10월 물가상승률이 9월 3.8%에서 4%로 올라 2023년 9월 이후 가장 높았고 ECB 목표(2%)의 두 배 수준임. 에너지 가격이 1년 전보다 20.8% 올라 전체 물가를 약 1.9%p 끌어올렸고, 근원물가는 2.5%로 유지됨. 이탈리아는 규제 에너지 요금 영향으로 5.6%(9월 4.2%), 벨기에 5.2%, 프랑스 3.8%로 올랐으나 독일은 10/1부터 연말까지 유류세를 인하해 2.8%로 내려감. 자동차·가전 등 비에너지 공산품은 1.2% 상승. ECB는 6월·9월 인상 뒤 10/29 예금금리를 2.5%로 동결했으나, 시장은 12/16~17 회의에서 0.25%p 인상 가능성을 약 84%로 보고 있고 일부 기관은 물가가 2027년 1월 4.5%로 정점을 찍을 것으로 전망함.", "sources": [{"title": "Euronews — Eurozone inflation hits 4%: Which countries saw prices jump the most? (11/4)", "url": "https://www.euronews.com/2026/11/04/eurozone-inflation-hits-4-which-countries-saw-prices-jump-the-most"}], "hypothesis": {"products": ["이탈리아·벨기에·프랑스 등 고물가 국가 판매 비중이 큰 차종 (인포테인먼트·ZKW 램프)", "자동차 할부·리스 금리에 민감한 중소형 차종", "유럽 생산 원가 (에너지·물류비)"], "direction": "하방 리스크", "text": "에너지발 물가 상승과 금리 인상 가능성이 겹치면 가계의 신차 구매 여력과 할부·리스 조건이 나빠져, 특히 물가가 크게 오른 이탈리아·벨기에 등에서 신차 주문이 둔화될 수 있음. 이는 1분기 생산 계획과 call-off 하향으로 이어질 수 있음. 또 에너지·물류 비용 상승을 이유로 고객사·물류사가 가격 조정이나 비용 분담을 요구할 가능성이 있음. 독일은 유류세 인하로 단기 부담이 덜하지만 연말 종료 후 반등 여지가 있음."}, "caveat": "속보치이며 확정치는 바뀔 수 있음. 물가 상승이 실제 신차 주문 감소로 이어졌다는 데이터는 확인하지 않았음. ECB 12월 인상은 시장 전망일 뿐 결정되지 않았음.", "actions": ["이탈리아·벨기에·프랑스 판매 비중이 큰 OEM 바이어에게 최근 신차 수주 잔고와 판매 추이, 1분기 생산 계획 변경 여부 확인", "VS 유럽 물류사·창고와 겨울철 에너지·운송 요금 인상 계획을 확인하고, 고객 계약상 원가 연동 조항 점검"], "buyer_question": "With euro-area inflation at 4% and another ECB hike possible, are you seeing any slowdown in order intake that could affect your Q1 2027 build plan or call-offs?"}], "today_actions": ["미국 중간선거(민주당 상·하원) — 미국 수출 비중 큰 OEM에 2027 미국 수출 차종 forecast·미국 현지화 RFQ 일정 재검토 여부 문의", "사이버공격 확산 — OEM 커넥티드카 보안 담당에 공급사 추가 점검·문서 요청 계획 확인, 유럽 창고 원격관리 설비 노출 여부 내부 점검", "CO2 2035 목표 87.5% 완화안 — e-파워트레인 고객의 BEV SOP·물량 가정 변화, 하이브리드·EREV 차종 수명 연장·RFQ 계획 확인", "BMW 마진 하향·구형 조기 단종 — 대상 차종·EOP·call-off 조정, 단종 부품 재고·last-time-buy 조건, 노이어 클라세 forecast 확인", "유로존 물가 4% — 이탈리아·벨기에·프랑스 판매 비중 큰 OEM의 수주 잔고·1분기 생산 계획, 물류·에너지 요금 인상과 원가 연동 조항 점검"]}</script>
+<script id="archive-data" type="application/json">["2026-11-05", "2026-11-04", "2026-11-03", "2026-11-02", "2026-11-01", "2026-10-31", "2026-10-30", "2026-10-29", "2026-10-28", "2026-10-27", "2026-10-26", "2026-10-25", "2026-10-24", "2026-10-23", "2026-10-22", "2026-10-21"]</script>
+<script>
+const d = JSON.parse(document.getElementById('report-data').textContent);
+const archive = JSON.parse(document.getElementById('archive-data').textContent);
+const base = '../';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dirClass = t => /하방|리스크 ?상승|위험/.test(t) && !/운영/.test(t) ? 'd-risk' : /운영/.test(t) ? 'd-ops' : /기회|상방/.test(t) ? 'd-opp' : 'd-mix';
+const statusMap = {ok:['수집 완료','s-ok'], partial:['일부 수집','s-part'], blocked:['접근 차단','s-bad'], error:['수집 실패','s-bad']};
+const days = ['일','월','화','수','목','금','토'];
+const dt = new Date(d.date + 'T00:00:00');
+const dateLabel = `${dt.getMonth()+1}월 ${dt.getDate()}일 ${days[dt.getDay()]}요일`;
+const key = 'eu-brief-checked-' + d.date;
+let checked = [];
+try { checked = JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) {}
+
+const topItems = d.items.filter(i => i.section === 'top');
+const vsItems = d.items.filter(i => i.section === 'vs');
+
+const issue = it => `
+<article class="issue" id="${esc(it.id)}">
+  <div class="tags"><span class="tag ${dirClass(it.hypothesis.direction)}">${esc(it.hypothesis.direction)}</span><span class="tag cat">${esc(it.category)}</span></div>
+  <h3>${esc(it.title)}</h3>
+  <p class="sum">${esc(it.summary)}</p>
+  <div class="duo">
+    <div class="pane hyp"><h4>VS 제품 영향 가설</h4><p>${esc(it.hypothesis.text)}</p>
+      <div class="prods">${it.hypothesis.products.map(p=>`<span>${esc(p)}</span>`).join('')}</div></div>
+    <div class="pane act"><h4>바이어에게 확인할 것</h4><ul>${it.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div>
+  </div>
+  <div class="caveat"><b>미확인</b><span>${esc(it.caveat)}</span></div>
+  <div class="ask"><div class="lbl"><span>바이어 질문 예시</span><button class="copy" type="button">복사</button></div><q>${esc(it.buyer_question)}</q></div>
+  <details class="src"><summary>출처 ${it.sources.length}건</summary><ul>${it.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></details>
+</article>`;
+
+document.getElementById('app').innerHTML = `
+<div class="bar">
+  <strong>EU 데일리 브리프 <span>/</span> VS 유럽영업</strong>
+  <label>지난 리포트 <select id="arch" aria-label="지난 리포트">${archive.map(a=>`<option value="${base}archive/${a}.html" ${a===d.date?'selected':''}>${a}</option>`).join('')}</select></label>
+</div>
+<header class="hero">
+  <p class="day">${esc(d.date)}</p>
+  <h1>${dateLabel}의 유럽</h1>
+  <p class="lead">${esc(d.headline)}</p>
+</header>
+<section class="today" aria-labelledby="today-h">
+  <h2 id="today-h">오늘 바이어에게 확인할 것</h2>
+  <p class="sub">뉴스는 가설입니다. 판매 추이·재고·발주 데이터로 확인하세요.</p>
+  <ul>${d.today_actions.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${checked.includes(i)?'checked':''}><span>${esc(t)}</span></label></li>`).join('')}</ul>
+  <div class="count" id="count"></div>
+</section>
+<section class="overview">
+  <div class="sec-h"><h2>오늘의 5가지</h2><p>대형 이슈 ${topItems.length} · VS 연관 ${vsItems.length}</p></div>
+  <ol class="ov">${d.items.map(i=>`<li><a href="#${esc(i.id)}"><span class="k ${i.section==='top'?'top':''}">${i.section==='top'?'대형 이슈':'VS 연관'}</span><span class="t">${esc(i.title)}</span></a></li>`).join('')}</ol>
+</section>
+<section class="group top">
+  <div class="sec-h"><h2>오늘의 가장 큰 이슈</h2><p>유럽 전체를 움직인 뉴스</p></div>
+  ${topItems.map(issue).join('')}
+</section>
+<section class="group">
+  <div class="sec-h"><h2>VS본부 연관 이슈</h2><p>전장 사업과 직접 닿는 뉴스</p></div>
+  ${vsItems.map(issue).join('')}
+</section>
+<div class="status">${d.sources_status.map(s=>{const [l,c]=statusMap[s.status]||[s.status,''];return `<span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> <span class="${c}">${esc(l)}</span></span>`}).join('')}</div>
+<footer>뉴스 기반 가설이며 수요 변화를 확정하지 않습니다. 생성 ${esc(d.generated_at)}</footer>`;
+
+document.getElementById('arch').addEventListener('change', e => { if (e.target.value) location.href = e.target.value; });
+const boxes = [...document.querySelectorAll('.today input')];
+const updateCount = () => { const n = boxes.filter(b=>b.checked).length; document.getElementById('count').textContent = `${n} / ${boxes.length} 확인 완료`; };
+boxes.forEach(b => b.addEventListener('change', () => {
+  const sel = boxes.filter(x=>x.checked).map(x=>+x.dataset.i);
+  try { localStorage.setItem(key, JSON.stringify(sel)); } catch(e) {}
+  updateCount();
+}));
+updateCount();
+document.querySelectorAll('.copy').forEach(btn => btn.addEventListener('click', async () => {
+  const text = btn.closest('.ask').querySelector('q').textContent;
+  try { await navigator.clipboard.writeText(text); btn.textContent = '복사됨'; } catch(e) { btn.textContent = '복사 실패'; }
+  setTimeout(() => btn.textContent = '복사', 1600);
+}));
+</script>
+</body>
+</html>
