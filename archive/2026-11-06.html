@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU 데일리 브리프 — 2026-11-06</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#FBFBF9; --surface:#FFFFFF; --ink:#16213A; --ink-2:#3A4458; --muted:#5A6475; --line:#E4E6EB;
+  --wine:#A50034; --wine-ink:#7E0028; --wine-tint:#F6E8ED; --on-wine:#FFFFFF;
+  --risk:#B3261E; --risk-bg:#FBEAE8; --ops:#8A5A00; --ops-bg:#FBF1DE; --mix:#3D4F6B; --mix-bg:#E8EDF4; --opp:#1F6B4A; --opp-bg:#E3F2EA;
+  --serif:"Noto Serif KR", serif; --sans:"Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#10141D;--surface:#171C27;--ink:#EEF0F4;--ink-2:#C9CED8;--muted:#98A1B2;--line:#283041;
+  --wine:#E0507A;--wine-ink:#F28AA8;--wine-tint:#2A1A22;--on-wine:#FFFFFF;
+  --risk:#FF8A80;--risk-bg:#3A1F1E;--ops:#F2C066;--ops-bg:#33290F;--mix:#A9BCD9;--mix-bg:#1F2838;--opp:#7FD6A9;--opp-bg:#15302A}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.bar strong{color:var(--ink);font-weight:600}
+.bar strong span{color:var(--wine)}
+.bar select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+
+/* hero */
+.hero{padding:48px 0 36px}
+.hero .day{font-size:15px;color:var(--muted);margin:0 0 6px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,7vw,48px);line-height:1.2;letter-spacing:-.01em;margin:0 0 22px}
+.hero .lead{font-family:var(--serif);font-weight:500;font-size:clamp(19px,3.4vw,22px);line-height:1.7;color:var(--ink-2);margin:0;padding-left:18px;border-left:3px solid var(--wine)}
+
+/* today checklist — the one loud element */
+.today{background:var(--wine);color:var(--on-wine);border-radius:18px;padding:28px 28px 22px;margin:8px 0 56px}
+.today h2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0 0 4px}
+.today .sub{font-size:14px;opacity:.85;margin:0 0 16px}
+.today ul{list-style:none;margin:0;padding:0}
+.today li{border-top:1px solid rgba(255,255,255,.22)}
+.today label{display:flex;gap:14px;align-items:flex-start;padding:13px 0;cursor:pointer;font-size:17px;font-weight:500;line-height:1.6}
+.today input{appearance:none;flex:none;width:22px;height:22px;margin-top:2px;border:2px solid rgba(255,255,255,.8);border-radius:6px;cursor:pointer;display:grid;place-content:center}
+.today input:checked{background:#fff}
+.today input:checked::after{content:"";width:10px;height:6px;border:solid var(--wine);border-width:0 0 2.5px 2.5px;transform:rotate(-45deg) translate(1px,-1px)}
+.today input:checked + span{text-decoration:line-through;opacity:.6}
+.today .count{font-size:13px;opacity:.85;margin-top:10px}
+
+/* overview */
+.overview{margin:0 0 56px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 18px}
+.sec-h h2{white-space:nowrap}
+.sec-h h2{font-family:var(--serif);font-size:24px;font-weight:700;margin:0}
+.sec-h p{margin:0;color:var(--muted);font-size:14px}
+.ov{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ov li{border-bottom:1px solid var(--line)}
+.ov a{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;text-decoration:none;align-items:baseline}
+.ov a:hover .t{color:var(--wine)}
+.ov .k{font-size:13px;font-weight:600;color:var(--muted)}
+.ov .k.top{color:var(--wine)}
+.ov .t{font-weight:600;font-size:16.5px;line-height:1.55}
+
+/* issue */
+.group{margin:0 0 40px}
+.issue{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px 28px;margin:0 0 20px}
+.group.top .issue{box-shadow:inset 0 4px 0 var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.tag{font-size:13px;font-weight:600;line-height:1;padding:7px 10px;border-radius:999px;white-space:nowrap;background:var(--mix-bg);color:var(--mix)}
+.tag.cat{background:transparent;border:1px solid var(--line);color:var(--muted);font-weight:500}
+.d-risk{background:var(--risk-bg);color:var(--risk)} .d-ops{background:var(--ops-bg);color:var(--ops)}
+.d-mix{background:var(--mix-bg);color:var(--mix)} .d-opp{background:var(--opp-bg);color:var(--opp)}
+.issue h3{font-family:var(--serif);font-weight:700;font-size:clamp(21px,4vw,25px);line-height:1.45;margin:0 0 12px;letter-spacing:-.005em}
+.issue .sum{color:var(--ink-2);margin:0 0 24px}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 16px}
+.pane{border-radius:12px;padding:18px 18px 16px}
+.pane h4{margin:0 0 8px;font-size:14px;font-weight:700}
+.hyp{background:var(--mix-bg)} .hyp h4{color:var(--mix)}
+.act{background:var(--wine-tint)} .act h4{color:var(--wine-ink)}
+.pane p,.pane ul{margin:0;font-size:15.5px;line-height:1.7}
+.pane ul{padding-left:18px}.pane li+li{margin-top:6px}
+.prods{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 0}
+.prods span{font-size:12.5px;padding:3px 8px;border-radius:6px;background:var(--surface);color:var(--ink-2);border:1px solid var(--line)}
+
+.caveat{display:flex;gap:10px;font-size:15px;color:var(--ink-2);padding:12px 14px;border:1px dashed var(--line);border-radius:10px;margin:0 0 16px}
+.caveat b{flex:none;color:var(--ops);font-weight:700}
+
+.ask{border-left:3px solid var(--wine);padding:4px 0 4px 16px;margin:0 0 18px}
+.ask .lbl{font-size:13px;color:var(--muted);margin:0 0 4px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ask q{display:block;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:17px;line-height:1.6;quotes:none}
+.copy{font:inherit;font-size:13px;font-weight:600;color:var(--wine-ink);background:transparent;border:1px solid var(--line);border-radius:8px;padding:5px 11px;cursor:pointer}
+.copy:hover{border-color:var(--wine)}
+
+details.src{font-size:14px;color:var(--muted)}
+details.src summary{cursor:pointer;width:max-content}
+details.src ul{margin:8px 0 0;padding-left:18px}
+details.src a{color:var(--ink-2)}
+
+/* status + footer */
+.status{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:48px}
+.status .s-ok{color:var(--opp)} .status .s-bad{color:var(--risk)} .status .s-part{color:var(--ops)}
+footer{font-size:13.5px;color:var(--muted);margin-top:14px;line-height:1.7}
+
+@media (max-width:640px){
+  .wrap{padding:0 16px 64px}
+  .hero{padding:36px 0 28px}
+  .today{padding:22px 20px 16px;border-radius:14px}
+  .issue{padding:24px 18px}
+  .duo{grid-template-columns:1fr}
+  .ov a{grid-template-columns:64px 1fr;gap:10px}
+  .sec-h p{flex-basis:100%}
+}
+@media (prefers-reduced-motion:no-preference){
+  .today{animation:rise .5s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script id="report-data" type="application/json">{"date": "2026-11-06", "generated_at": "2026-11-06T07:45:00+09:00", "headline": "프랑스에서 2027년 긴축 예산에 반발한 전국 총파업(철도·항만·관제 노조 참여)이 벌어졌고, 미국 중간선거 결과가 유럽의 우크라이나 지원·통상·AI 규제에 무엇을 바꿀지가 유럽 언론의 중심 논쟁이 됨. VS 쪽에서는 EU의 대중국 '킬스위치' 무역방어 수단 추진과 중국의 보복 경고, 호르무즈발 에너지 충격 속 영란은행의 3년여 만의 금리 인상(4%), EU의 5억2,500만 유로 규모 반도체 설계 플랫폼 출범을 주목함.", "sources_status": [{"name": "Euronews", "url": "https://www.euronews.com/", "status": "partial", "note": "홈페이지·/business·11/5 날짜 아카이브 첫 시도는 WebFetch '권한 요청 시간 초과(PROVENANCE_REQUIRED)'로 실패해 우회하지 않음. euronews.com 한정 WebSearch로 기사 주소를 찾은 뒤 11/5 날짜 아카이브(https://www.euronews.com/2026/11/05)와 기사 5건(중국 킬스위치, 프랑스 총파업, 영란은행 금리, 반도체 설계 플랫폼, 항공기 폭탄 위협)은 직접 읽음. 'Europe weighs implications of Trump's midterm setback' 기사는 같은 오류로 열리지 않음."}, {"name": "eurotopics", "url": "https://www.eurotopics.net/en/", "status": "partial", "note": "홈페이지는 같은 사유(PROVENANCE_REQUIRED)로 실패. eurotopics.net 한정 WebSearch로 찾은 11/5자 토론 'US midterms: what will change for Europe?'을 직접 읽음. 자동차·통상 관련 신규 토론은 찾지 못함."}], "items": [{"id": "france-general-strike-austerity-budget", "section": "top", "category": "프랑스 정치/노동", "title": "프랑스 하원, 2027년 예산 1부 부결 다음 날 전국 총파업 — 철도·항만·항공관제 노조 참여, 경찰 7만 명 배치, 리옹 최대 5만5천 명 행진", "summary": "프랑스 하원이 11/4 여야 한목소리로 2027년 예산안 1부를 부결한 다음 날인 11/5, 노조·노란조끼·학생 등이 참여한 전국 총파업과 대규모 시위가 열림. 의료·교육 종사자뿐 아니라 항공관제사, 철도·항만 노동자, 우체국 직원도 동참할 것으로 예고됐고, 내무장관은 7만 명 이상의 경찰을 투입한다고 밝힘. 리옹에서는 최대 5만5천 명이 행진했고 충돌·최루탄이 보도됨. 정부 원안은 상원으로 넘어가 12/9 표결 예정이며 이후 양원 협의가 남아 있음. 노조는 사회급여 동결 등 취약층을 겨냥한 긴축이라고 반발함. 내년 4월 선거를 6개월도 안 남긴 상황에서 국민연합 르펜이 지지율 선두임. 호르무즈 해협 봉쇄발 연료 가격 상승에 대응해 정부는 11/1부터 전략비축 경유 1천만 배럴을 풀었고, 경제장관은 경유값이 리터당 평균 15센트 내렸다고 밝힘.", "sources": [{"title": "Euronews — Hundreds of thousands march in nationwide strike in France as government backs austerity budget (11/5)", "url": "https://www.euronews.com/2026/11/05/france-braces-for-nationwide-strike-as-government-backs-austerity-budget-to-rein-in-soarin"}, {"title": "Euronews — 11/5 기사 목록(리옹 5만5천 명 시위 영상 제목 확인)", "url": "https://www.euronews.com/2026/11/05"}], "hypothesis": {"products": ["프랑스 OEM 공장향 납품 전 품목 (인포테인먼트·ADAS 카메라·ZKW 램프)", "프랑스 항만(르아브르·마르세유 등) 경유 해상 입고 물량", "프랑스 내수 판매 비중이 큰 차종"], "direction": "운영 리스크", "text": "철도·항만 노동자가 참여하는 파업이 반복되거나 길어지면 프랑스 항만 하역과 철도 화물이 지연돼, 프랑스 경유 부품 입고와 OEM 공장 JIT 납품 일정에 차질이 생길 수 있음. 예산 부결과 정치 불확실성, 사회급여 동결 같은 긴축 조치는 내년 상반기 프랑스 내수 신차 수요를 위축시킬 가능성이 있음."}, "caveat": "이번 파업으로 항만·철도 화물이나 자동차 공장 가동이 실제로 멈췄다는 보도는 확인하지 못했음. 추가 파업 일정도 발표되지 않았음. 예산은 상원 표결(12/9)과 양원 협의가 남아 최종 내용이 바뀔 수 있음.", "actions": ["프랑스 경유 물량을 담당하는 물류사에 11/5 파업 당일 항만·철도 지연 여부와 추가 파업 예고 시 대체 경로(벨기에·네덜란드 항만, 트럭) 준비 상태 확인", "프랑스 OEM 바이어에게 파업에 따른 공장 가동·입고 일정 변경이 있었는지, 연말까지 call-off 조정 계획이 있는지 확인"], "buyer_question": "Did yesterday's nationwide strike in France affect your inbound logistics or plant operations, and should we prepare alternative routing for deliveries if further strikes are called?"}, {"id": "us-midterms-what-changes-for-europe", "section": "top", "category": "국제정치/미국", "title": "미국 중간선거 이후 '유럽에 무엇이 바뀌나' — 유럽 언론, 우크라이나 지원·통상·AI 규제에서 의회와 협력할 기회 vs 행정명령 의존으로 더 예측 불가능해질 트럼프", "summary": "민주당의 의회 장악 이튿날인 11/5, eurotopics는 이번 결과가 우크라이나 지원·통상정책·AI 규제를 통해 유럽에도 변화를 가져올 수 있다는 유럽 언론 논평을 모음. 스페인 El País는 트럼프주의의 끝이 시작됐다고 했고, 그리스 Protagon.gr은 우크라이나 지원·동지중해 안보·에너지 연계에서 새 의회와 협력하되 선거 주기를 넘어 지속될 공동 결정과 재원을 만들라고 주문함. 포르투갈 Expresso는 의회와 협력할 기회가 생겼지만 트럼프의 동맹 공약과 통상 요구, 양자 협상 선호는 여전히 불확실하다고 경고함. 이탈리아 La Stampa와 리투아니아 IQ는 민주당 의회가 AI 규제를 강화할 것으로 보면서, IQ는 견제받는 대통령이 행정명령에 기대 대외정책이 더 예측하기 어려워질 수 있다고 봄. Euronews도 '의회를 잃은 트럼프가 더 예측 불가능해질 것인가'를 주제로 다룸.", "sources": [{"title": "eurotopics — US midterms: what will change for Europe? (11/5 언론 리뷰)", "url": "https://www.eurotopics.net/en/366775/us-midterms-what-will-change-for-europe"}, {"title": "Euronews — 11/5 기사 목록('Trump loses Congress. Will he now be even more unpredictable?' 제목 확인)", "url": "https://www.euronews.com/2026/11/05"}], "hypothesis": {"products": ["미국 수출 비중이 큰 유럽 OEM 차종 (인포테인먼트·ADAS 카메라·ZKW 램프)", "유럽 OEM의 미국 현지 생산 프로그램 RFQ", "커넥티드·AI 기능 탑재 인포테인먼트 (규제 요건)"], "direction": "혼재", "text": "어제 가설의 연장선. 의회 견제로 관세 기조가 완화될 기대가 생기면 유럽 생산·미국 수출 차종의 물량이 유지될 수 있지만, 대통령이 행정명령 중심으로 통상정책을 운용하면 관세가 오히려 예고 없이 바뀔 위험도 있어 OEM이 미국 수출 차종 forecast를 보수적으로 잡을 가능성이 있음. 미국의 AI·데이터 규제 강화 가능성은 인포테인먼트·커넥티드 기능의 미국 사양 요건 변경으로 이어질 수 있음."}, "caveat": "언론 논평 모음으로, 관세·통상정책 변경 발표는 없음. 새 의회는 내년 1월 출범함. Euronews의 'Europe weighs implications of Trump's midterm setback' 기사는 열리지 않아 내용을 확인하지 못했음. AI 규제 전망은 논평자의 예상일 뿐임.", "actions": ["미국 수출 비중이 큰 OEM 바이어에게 2027년 미국 수출 차종 forecast를 선거 결과 이후 어떤 방향으로 보고 있는지(유지·하향·보류) 확인", "미국 사양 인포테인먼트·커넥티드 프로그램 고객에게 미국 데이터·AI 규제 변화 가능성을 사양 검토 항목에 넣고 있는지 문의"], "buyer_question": "Given the uncertainty over how US trade policy will be run after the midterms, are you planning your 2027 US-bound volumes conservatively, or keeping the current forecast?"}, {"id": "eu-china-kill-switch-retaliation", "section": "vs", "category": "EU 통상/중국", "title": "EU, 중국산 수입 급증에 시장 접근 차단 '킬스위치' 연내 제시 예정 — 주EU 중국대사 '보복 조치' 경고, 대중 무역적자 하루 10억 유로", "summary": "EU 집행위가 공격적 무역정책으로 역내 시장이 심각하게 흔들릴 때 빠르게 수입을 제한할 수 있는 새 무역방어 수단('킬스위치')을 준비 중이며, 셰프초비치 통상담당 집행위원은 11/4 유럽의회에서 연말까지 내놓겠다고 밝힘. 특정 국가를 명시하지 않지만 사실상 중국을 겨냥한 것으로 평가되며, 10월 초 프랑스·독일이 도입을 밀었음. 이에 주EU 중국대사 차이룬은 11/5 EU가 일방적 제한 조치를 채택하면 대응 조치를 취하겠다고 경고함. EU의 대중 무역적자는 하루 10억 유로로 사상 최대이고, 중국 세관 기준 대EU 수출은 1년 새 25% 늘었으며 모든 회원국이 대중 적자임. EU는 10/9 중국산 하이브리드차 수입을 줄이는 합의를 이뤘고, 정상들은 화학·기계 분야 중국산에 쿼터·관세를 요구함. 양측 통상장관 회담은 2027년 3월로 잡혀 있음.", "sources": [{"title": "Euronews — China threatens EU with retaliation as EU mulls 'kill-switch' to defend its market (11/5)", "url": "https://www.euronews.com/2026/11/05/china-threatens-eu-with-retaliation-as-eu-mulls-kill-switch-to-defend-its-market"}], "hypothesis": {"products": ["중국산 부품·원자재가 들어가는 VS 제품 (전자부품·모듈, e-파워트레인 소재)", "중국 브랜드와 경쟁하는 유럽 OEM 차종 (인포테인먼트·램프·ADAS)", "EU 현지 조달 요건이 붙는 신규 RFQ"], "direction": "혼재", "text": "킬스위치와 품목별 관세가 실제로 쓰이면 중국산 완성차·부품의 EU 유입이 줄어 유럽 OEM 차종의 점유율 방어에 도움이 될 수 있음(잠재 기회). 반면 중국이 희토류·전자부품 등에 보복하면 VS 제품의 부품 조달과 원가에 차질이 생길 수 있고, OEM이 RFQ에서 비중국 공급망·역내 생산 비율 증빙을 더 강하게 요구할 가능성이 있음."}, "caveat": "킬스위치는 아직 제안 전 단계로, 대상 품목·발동 요건이 공개되지 않았음. 중국의 보복 대상도 구체적으로 언급되지 않았음. 자동차 부품이 대상에 포함될지 확인되지 않았음.", "actions": ["주요 OEM 구매에 신규 RFQ에서 중국산 부품 비중·원산지 증빙이나 역내 조달 비율 요건을 추가할 계획이 있는지 확인", "내부 조달팀과 VS 유럽 공급 제품의 중국산 부품·소재 의존 품목과 대체 공급처, 안전재고 수준을 점검"], "buyer_question": "As the EU prepares its new trade-defence 'kill-switch' and China threatens countermeasures, do you expect to add any origin or non-China supply-chain requirements to upcoming RFQs?"}, {"id": "boe-rate-hike-energy-shock", "section": "vs", "category": "거시경제/영국", "title": "영란은행, 3년여 만에 기준금리 인상(3.75%→4%) — 호르무즈발 연료비 급등으로 내년 중반 물가 5% 전망, 추가 인상 여지", "summary": "영란은행이 11/5 기준금리를 3.75%에서 4%로 0.25%p 올림. 2023년 8월 이후 첫 인상으로 위원 8명이 0.25%p, 1명이 0.5%p 인상에 투표함. 2월 말 미국·이스라엘의 이란 공격 이후 호르무즈 해협 병목으로 연료비가 뛰며 9월 물가가 3.5%까지 올랐고, 은행은 2027년 중반 약 5%까지 오를 수 있다고 봄. 베일리 총재는 이번이 연속 인상의 시작으로 볼 일은 아니지만 중동 분쟁이 풀리지 않으면 마지막도 아닐 것이라고 함. 성장률 전망은 올해 1.6%, 2027년 1.3%로 상향됐고, 2년 고정 주택담보대출 금리는 9월 초보다 약 0.5%p 올랐음. 미국 연준과 ECB도 최근 금리를 올렸음.", "sources": [{"title": "Euronews — Bank of England raises key interest rate for first time in over 3 years (11/5)", "url": "https://www.euronews.com/2026/11/05/bank-of-england-raises-key-interest-rate-for-first-time-in-over-3-years"}], "hypothesis": {"products": ["영국 판매 비중이 큰 차종 (인포테인먼트·ZKW 램프·ADAS 카메라)", "할부·PCP 금융 의존도가 높은 영국 신차 시장", "영국 내 OEM 공장향 납품 물량"], "direction": "하방 리스크", "text": "영국·유로존·미국이 동시에 금리를 올리는 흐름에서 영국은 PCP 등 자동차 금융 의존도가 높아, 금리 상승이 신차 월 납입금을 끌어올려 내년 상반기 신차 주문을 둔화시킬 가능성이 있음. 이는 영국 판매 비중이 큰 차종과 영국 내 OEM 공장의 생산 계획·call-off 하향으로 이어질 수 있음. 에너지 가격이 높게 유지되면 물류·운송비 인상 요구도 이어질 수 있음."}, "caveat": "기사에 자동차 판매나 생산에 대한 언급은 없음. 금리 인상이 실제 신차 주문 감소로 이어졌다는 데이터는 확인하지 않았음. 추가 인상은 결정되지 않았음.", "actions": ["영국 판매 비중이 큰 OEM 바이어에게 최근 영국 신차 수주 잔고와 금융(PCP) 조건 변화, 1분기 영국향 생산 계획 변경 여부 확인", "영국 공장 공급 품목의 12~1월 call-off와 영국 창고 재고 수준을 점검해 하향 시 재고 과잉 여부 확인"], "buyer_question": "With the Bank of England now raising rates, are you seeing any softening in UK order intake that might change your Q1 2027 build plan or call-offs for UK-bound models?"}, {"id": "eu-chip-design-platform-525m", "section": "vs", "category": "반도체/산업정책", "title": "EU, 5억2,500만 유로 규모 '유럽 반도체 설계 플랫폼' 출범 — 스타트업·중소기업에 설계 도구·IP·생산 접근과 최대 1,600만 유로 지원", "summary": "EU 집행위가 반도체 설계 스타트업과 중소기업을 지원하는 '유럽 반도체 설계 플랫폼'을 발표함. Euronews 집계로 총 5억2,500만 유로 규모이며, 초기 기업에 설계 도구와 IP·제조 접근, 기업당 최대 1,600만 유로의 보조금을 제공함. 유럽 기업의 세계 반도체 설계 매출 비중은 1% 미만으로, 집행위는 역내에 지은 팹이 수익을 내려면 유럽 설계 기업의 수요가 있어야 한다고 설명함. 반도체법(Chips Act)의 2030년 세계 생산 점유율 20% 목표(2020년 약 9%)에 대해 유럽회계감사원은 2025년 '달성 가능성이 매우 낮다'고 평가한 바 있음. 플랫폼은 Chips Joint Undertaking을 통해 운영됨.", "sources": [{"title": "Euronews — Europe is betting €525 million on chip design start-ups (11/5)", "url": "https://www.euronews.com/2026/11/05/europe-is-betting-525-million-on-chip-design-start-ups"}], "hypothesis": {"products": ["ADAS 카메라·인포테인먼트·텔레매틱스용 SoC·이미지센서 등 반도체 조달", "OEM의 '유럽산 반도체' 선호·공급망 다변화 요구", "e-파워트레인 전력반도체"], "direction": "잠재 기회", "text": "단기 수요에 직접적 영향은 작지만, EU가 반도체 주권을 강조하면서 유럽 OEM이 중장기 플랫폼 RFQ에서 칩 공급망 다변화나 유럽 설계·생산 칩 채택을 평가 항목에 넣을 가능성이 있음. 유럽 칩 설계 기업과의 협업 구조를 미리 갖추면 차세대 ADAS·인포테인먼트 수주에서 차별화 요소가 될 수 있음."}, "caveat": "자동차용 반도체를 겨냥한 지원인지는 기사에 나오지 않았음. OEM이 유럽산 칩 요건을 RFQ에 넣었다는 사례는 확인하지 않았음. 총액 5억2,500만 유로는 Euronews 표기이며 집행위 원문은 확인하지 않았음.", "actions": ["주요 OEM 전자·구매 담당에게 차세대 플랫폼 RFQ에서 반도체 원산지·공급망 다변화 요구사항이 있는지(혹은 예정인지) 확인", "현재 공급 중인 ADAS 카메라·인포테인먼트 모듈의 핵심 칩 공급 리드타임과 OEM이 요구하는 재고 버퍼 수준을 바이어와 재확인"], "buyer_question": "As the EU pushes for more European chip design and supply-chain resilience, will semiconductor origin or dual-sourcing be an evaluation criterion in your next ADAS or infotainment RFQs?"}], "today_actions": ["프랑스 총파업 — 프랑스 경유 물류사에 항만·철도 지연 여부와 대체 경로 확인, 프랑스 OEM에 공장 가동·call-off 변경 여부 문의", "미국 중간선거 이후 — 미국 수출 비중 큰 OEM의 2027 미국향 forecast 방향(유지·하향·보류)과 미국 사양 규제 검토 여부 확인", "EU 킬스위치·중국 보복 경고 — OEM RFQ의 원산지·비중국 공급망 요건 추가 여부 확인, 내부 중국산 부품 의존 품목·안전재고 점검", "영란은행 금리 인상 — 영국 비중 큰 OEM의 수주 잔고·PCP 조건·1분기 생산 계획, 영국향 12~1월 call-off와 재고 점검", "EU 반도체 설계 플랫폼 — 차세대 ADAS·인포테인먼트 RFQ의 반도체 원산지·이원화 요건과 현 칩 리드타임·재고 버퍼 확인"]}</script>
+<script id="archive-data" type="application/json">["2026-11-06", "2026-11-05", "2026-11-04", "2026-11-03", "2026-11-02", "2026-11-01", "2026-10-31", "2026-10-30", "2026-10-29", "2026-10-28", "2026-10-27", "2026-10-26", "2026-10-25", "2026-10-24", "2026-10-23", "2026-10-22", "2026-10-21"]</script>
+<script>
+const d = JSON.parse(document.getElementById('report-data').textContent);
+const archive = JSON.parse(document.getElementById('archive-data').textContent);
+const base = '../';
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dirClass = t => /하방|리스크 ?상승|위험/.test(t) && !/운영/.test(t) ? 'd-risk' : /운영/.test(t) ? 'd-ops' : /기회|상방/.test(t) ? 'd-opp' : 'd-mix';
+const statusMap = {ok:['수집 완료','s-ok'], partial:['일부 수집','s-part'], blocked:['접근 차단','s-bad'], error:['수집 실패','s-bad']};
+const days = ['일','월','화','수','목','금','토'];
+const dt = new Date(d.date + 'T00:00:00');
+const dateLabel = `${dt.getMonth()+1}월 ${dt.getDate()}일 ${days[dt.getDay()]}요일`;
+const key = 'eu-brief-checked-' + d.date;
+let checked = [];
+try { checked = JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) {}
+
+const topItems = d.items.filter(i => i.section === 'top');
+const vsItems = d.items.filter(i => i.section === 'vs');
+
+const issue = it => `
+<article class="issue" id="${esc(it.id)}">
+  <div class="tags"><span class="tag ${dirClass(it.hypothesis.direction)}">${esc(it.hypothesis.direction)}</span><span class="tag cat">${esc(it.category)}</span></div>
+  <h3>${esc(it.title)}</h3>
+  <p class="sum">${esc(it.summary)}</p>
+  <div class="duo">
+    <div class="pane hyp"><h4>VS 제품 영향 가설</h4><p>${esc(it.hypothesis.text)}</p>
+      <div class="prods">${it.hypothesis.products.map(p=>`<span>${esc(p)}</span>`).join('')}</div></div>
+    <div class="pane act"><h4>바이어에게 확인할 것</h4><ul>${it.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></div>
+  </div>
+  <div class="caveat"><b>미확인</b><span>${esc(it.caveat)}</span></div>
+  <div class="ask"><div class="lbl"><span>바이어 질문 예시</span><button class="copy" type="button">복사</button></div><q>${esc(it.buyer_question)}</q></div>
+  <details class="src"><summary>출처 ${it.sources.length}건</summary><ul>${it.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></details>
+</article>`;
+
+document.getElementById('app').innerHTML = `
+<div class="bar">
+  <strong>EU 데일리 브리프 <span>/</span> VS 유럽영업</strong>
+  <label>지난 리포트 <select id="arch" aria-label="지난 리포트">${archive.map(a=>`<option value="${base}archive/${a}.html" ${a===d.date?'selected':''}>${a}</option>`).join('')}</select></label>
+</div>
+<header class="hero">
+  <p class="day">${esc(d.date)}</p>
+  <h1>${dateLabel}의 유럽</h1>
+  <p class="lead">${esc(d.headline)}</p>
+</header>
+<section class="today" aria-labelledby="today-h">
+  <h2 id="today-h">오늘 바이어에게 확인할 것</h2>
+  <p class="sub">뉴스는 가설입니다. 판매 추이·재고·발주 데이터로 확인하세요.</p>
+  <ul>${d.today_actions.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${checked.includes(i)?'checked':''}><span>${esc(t)}</span></label></li>`).join('')}</ul>
+  <div class="count" id="count"></div>
+</section>
+<section class="overview">
+  <div class="sec-h"><h2>오늘의 5가지</h2><p>대형 이슈 ${topItems.length} · VS 연관 ${vsItems.length}</p></div>
+  <ol class="ov">${d.items.map(i=>`<li><a href="#${esc(i.id)}"><span class="k ${i.section==='top'?'top':''}">${i.section==='top'?'대형 이슈':'VS 연관'}</span><span class="t">${esc(i.title)}</span></a></li>`).join('')}</ol>
+</section>
+<section class="group top">
+  <div class="sec-h"><h2>오늘의 가장 큰 이슈</h2><p>유럽 전체를 움직인 뉴스</p></div>
+  ${topItems.map(issue).join('')}
+</section>
+<section class="group">
+  <div class="sec-h"><h2>VS본부 연관 이슈</h2><p>전장 사업과 직접 닿는 뉴스</p></div>
+  ${vsItems.map(issue).join('')}
+</section>
+<div class="status">${d.sources_status.map(s=>{const [l,c]=statusMap[s.status]||[s.status,''];return `<span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a> <span class="${c}">${esc(l)}</span></span>`}).join('')}</div>
+<footer>뉴스 기반 가설이며 수요 변화를 확정하지 않습니다. 생성 ${esc(d.generated_at)}</footer>`;
+
+document.getElementById('arch').addEventListener('change', e => { if (e.target.value) location.href = e.target.value; });
+const boxes = [...document.querySelectorAll('.today input')];
+const updateCount = () => { const n = boxes.filter(b=>b.checked).length; document.getElementById('count').textContent = `${n} / ${boxes.length} 확인 완료`; };
+boxes.forEach(b => b.addEventListener('change', () => {
+  const sel = boxes.filter(x=>x.checked).map(x=>+x.dataset.i);
+  try { localStorage.setItem(key, JSON.stringify(sel)); } catch(e) {}
+  updateCount();
+}));
+updateCount();
+document.querySelectorAll('.copy').forEach(btn => btn.addEventListener('click', async () => {
+  const text = btn.closest('.ask').querySelector('q').textContent;
+  try { await navigator.clipboard.writeText(text); btn.textContent = '복사됨'; } catch(e) { btn.textContent = '복사 실패'; }
+  setTimeout(() => btn.textContent = '복사', 1600);
+}));
+</script>
+</body>
+</html>
